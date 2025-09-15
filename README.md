@@ -7,13 +7,14 @@
 
 ## 🎯 Project Overview
 
-This repository contains a complete research pipeline for evaluating and implementing neural patent similarity search systems. The project evaluates 4 embedding models across 1,625+ patents and provides production-ready implementations with sub-4 second query processing.
+This repository contains a comprehensive research pipeline for evaluating and implementing neural patent similarity search systems. The project evaluates 4 embedding models across 100,000+ patents with extensive ground truth validation using LLM evaluation.
 
 ### Key Achievements
-- **36× speedup** with dedicated rerankers vs. LLM approaches
-- **Production-ready system** processing 329 patents/minute  
-- **Scientific validation** with proper statistical analysis
-- **Novel insights** into embedding-LLM similarity disconnect (r=0.275)
+- **Large-scale embeddings**: 91,725+ patent embeddings across 4 models (nomic-embed-text, bge-m3, embeddinggemma, mxbai-embed-large)
+- **Comprehensive ground truth**: 10,000 LLM-evaluated patent similarity pairs (in progress: 6,600+ completed)
+- **Multi-provider LLM evaluation**: Automated similarity scoring using Gemini 1.5 Flash
+- **Production-ready pipeline**: Complete embedding generation, evaluation, and analysis workflow
+- **Advanced data organization**: Git LFS integration for large-scale dataset management
 
 ---
 
@@ -37,15 +38,17 @@ patent_research/
 │   ├── comprehensive_evaluation.py   # End-to-end evaluation pipeline
 │   └── download_large_diverse_patents.py # Dataset preparation
 │
-├── data/                       # Datasets and results
-│   ├── patent_abstracts.jsonl           # Base patent dataset
-│   ├── patent_abstracts_10k_diverse.jsonl # 10K diverse patents
-│   ├── patent_abstracts_100k_diverse.jsonl # 100K diverse patents  
-│   ├── patent_ground_truth_100.jsonl     # LLM-evaluated pairs
-│   ├── baseline_comparison_100_queries.jsonl # Baseline study results
-│   ├── *_embeddings.jsonl               # Generated embeddings
-│   ├── *_batch_results.json             # Experiment results
-│   └── patent_similarity_statistical_analysis.json # Statistics
+├── data/                       # Datasets and results  
+│   ├── patent_abstracts_100k_diverse.jsonl # 100K diverse patents (255MB)
+│   ├── patent_abstracts_10k_diverse.jsonl  # 10K diverse patents (44MB)
+│   ├── patent_ground_truth_*.jsonl         # LLM-evaluated similarity pairs
+│   ├── metadata/
+│   │   ├── master_index.json              # Complete data inventory
+│   │   └── organization_plan.json         # Data consolidation plan
+│   └── *_embeddings.jsonl                 # Generated embeddings (766MB+ total)
+│
+├── production_*_embeddings.jsonl      # Large-scale embedding results (Git LFS)
+├── ground_truth_partial_*.jsonl       # Ongoing ground truth generation
 │
 ├── reports/                    # Research reports and analysis
 │   ├── SCIENTIFIC_PATENT_SEARCH_ANALYSIS.md  # 📄 Main scientific paper
@@ -79,8 +82,8 @@ patent_research/
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd patent_research
+git clone https://github.com/nostoslabs/patent-research.git
+cd patent-research
 
 # Install dependencies with uv (recommended)
 uv sync
@@ -159,14 +162,21 @@ uv run python code/scientific_analysis.py
 
 ## 📊 Key Research Findings
 
-### Embedding Model Rankings
+### Current Dataset Scale
 
-| Model | Speed (pat/min) | Overall Score | Context Window | Production Ready |
-|-------|-----------------|---------------|----------------|------------------|
-| **nomic-embed-text** | 329 | 81.5/100 | 8,192 tokens | ✅ **Yes** |
-| **bge-m3** | 133 | 66.0/100 | 8,192 tokens | ✅ Yes |
-| **embeddinggemma** | 99 | 27.2/100 | 2,048 tokens | ⚠️ Limited |
-| **mxbai-embed-large** | 50 | 24.8/100 | 512 tokens | ❌ No |
+| Model | Generated Embeddings | Context Window | File Size | Status |
+|-------|---------------------|----------------|-----------|---------|
+| **nomic-embed-text** | 51,725 patents | 8,192 tokens | 766MB+ | ✅ Complete |
+| **bge-m3** | 7,325 patents | 8,192 tokens | 136MB+ | ✅ Complete |
+| **embeddinggemma** | 725 patents | 2,048 tokens | 23MB+ | ⚠️ Limited |
+| **mxbai-embed-large** | 725 patents | 512 tokens | 125MB+ | ⚠️ Limited |
+
+### Ground Truth Generation Progress
+
+- **Target**: 10,000 LLM-evaluated patent similarity pairs  
+- **Current**: 6,600+ pairs completed (66% complete)
+- **Evaluation**: Gemini 1.5 Flash with structured similarity scoring
+- **Format**: Continuous generation with monitoring and error handling
 
 ### Reranker Performance
 
@@ -237,13 +247,14 @@ uv run python code/model_performance_analyzer.py
 uv run python code/comprehensive_evaluation.py
 ```
 
-### Expected Outputs
+### Current Status & Outputs
 
-- **Embeddings**: Generated for all 4 models across datasets
-- **Performance metrics**: Speed, accuracy, context efficiency  
-- **Statistical analysis**: Correlations, distributions, significance tests
-- **Visualizations**: Scientific plots and correlation heatmaps
-- **Reports**: Publication-ready analysis documents
+- **Embeddings**: 91,725+ total embeddings generated across 4 models
+- **Ground truth**: 6,600+ of 10,000 LLM-evaluated pairs completed
+- **Data consolidation**: Master index and organization plan created
+- **Git LFS integration**: Large datasets properly versioned and tracked
+- **Production pipeline**: Automated embedding generation and evaluation system
+- **Repository**: Available at https://github.com/nostoslabs/patent-research
 
 ---
 
@@ -324,11 +335,13 @@ uv run python code/run_multimodel_experiments.py compare your_dataset.jsonl
 - **GPU**: Optional (can accelerate embedding models)
 - **Storage**: 10GB+ for complete datasets and results
 
-### Scaling Considerations
+### Current Scale Achieved
 
-- **10K patents**: Real-time search, <1GB storage
-- **100K patents**: Near real-time, ~5GB storage  
-- **1M+ patents**: Requires optimization, distributed processing
+- **100K patents**: Successfully processed with embeddings
+- **51,725 nomic-embed-text embeddings**: 766MB with Git LFS
+- **Ground truth generation**: 10,000 pairs with LLM evaluation  
+- **Storage**: ~2GB total with Git LFS compression
+- **Processing**: Production pipeline handles large-scale generation
 
 ---
 
@@ -342,10 +355,10 @@ If you use this research in your work, please cite:
 
 ```bibtex
 @misc{patent_similarity_research_2025,
-  title={Neural Patent Similarity Search: A Comprehensive Evaluation of Embedding Models and Reranking Approaches},
+  title={Large-Scale Neural Patent Similarity Search: Comprehensive Evaluation of Embedding Models with LLM Ground Truth},
   author={[Author Names]},
   year={2025},
-  note={Available at: [Repository URL]}
+  note={Available at: https://github.com/nostoslabs/patent-research}
 }
 ```
 
@@ -353,19 +366,19 @@ If you use this research in your work, please cite:
 
 ## 🚨 Limitations & Future Work
 
-### Current Limitations
+### Current Status & Limitations
 
-1. **Ground truth sample size**: n=50 pairs insufficient for robust correlation analysis
-2. **Single LLM evaluator**: Results dependent on Gemini-1.5-Flash capabilities
-3. **Abstract-only analysis**: Missing claims, figures, and technical specifications  
-4. **Limited domain coverage**: 7 classification groups may not represent full diversity
+1. **Ground truth in progress**: 6,600+ of 10,000 pairs completed (expanding to robust n=10,000)
+2. **LLM evaluation**: Currently using Gemini-1.5-Flash for consistent automated evaluation
+3. **Abstract-only analysis**: Focus on patent abstracts for computational efficiency  
+4. **Model coverage**: 4 embedding models with varying completion levels
 
 ### Immediate Next Steps
 
-1. **Expand ground truth to n≥200** with stratified sampling
-2. **Multi-evaluator validation** (human experts + multiple LLMs)  
-3. **Full patent document analysis** incorporating all sections
-4. **Cross-domain validation** across different technical fields
+1. **Complete 10,000 ground truth pairs** for robust statistical analysis
+2. **Execute data reorganization plan** after ground truth completion  
+3. **Comprehensive evaluation** across all embedding models with full ground truth
+4. **Statistical analysis** of correlations and model performance rankings
 
 ### Research Extensions
 
