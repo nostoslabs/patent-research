@@ -1,0 +1,12 @@
+{
+  "total_pairs_requested": 10000,
+  "pairs_generated": 10000,
+  "pairs_processed": 10000,
+  "successful_evaluations": 9988,
+  "failed_evaluations": 12,
+  "success_rate": 0.9988,
+  "processing_time_minutes": 41.823029867808025,
+  "output_file": "ground_truth_10k.jsonl",
+  "provider_used": "google",
+  "timestamp": "2025-09-14 22:29:51"
+}

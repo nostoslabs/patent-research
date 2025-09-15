@@ -4,7 +4,7 @@
   "experiments": {},
   "statistics": {
     "total_embedding_files": 23,
-    "total_ground_truth_files": 3,
+    "total_ground_truth_files": 4,
     "total_raw_files": 5,
     "models_with_embeddings": [
       "bge-m3",
@@ -38,7 +38,7 @@
       "null": 954
     }
   },
-  "last_updated": "2025-09-14 22:04:05",
+  "last_updated": "2025-09-14 22:37:03",
   "embeddings_by_model": {
     "bge-m3": [
       {
@@ -831,28 +831,28 @@
       "file_size_mb": 3.719472885131836
     },
     {
-      "filepath": "data/patent_abstracts_100k_diverse.jsonl",
-      "filename": "patent_abstracts_100k_diverse.jsonl",
-      "record_count": 46362,
-      "file_size_mb": 254.72459030151367
-    },
-    {
       "filepath": "data/patent_abstracts_with_embeddings_large.jsonl",
       "filename": "patent_abstracts_with_embeddings_large.jsonl",
       "record_count": 0,
       "file_size_mb": 0.0
     },
     {
-      "filepath": "data/patent_abstracts_10k_diverse.jsonl",
-      "filename": "patent_abstracts_10k_diverse.jsonl",
-      "record_count": 7955,
-      "file_size_mb": 43.5335578918457
+      "filepath": "data/patent_abstracts_100k_diverse.jsonl",
+      "filename": "patent_abstracts_100k_diverse.jsonl",
+      "record_count": 46362,
+      "file_size_mb": 254.72459030151367
     },
     {
       "filepath": "data/patent_abstracts_with_embeddings.jsonl",
       "filename": "patent_abstracts_with_embeddings.jsonl",
       "record_count": 929,
       "file_size_mb": 17.436453819274902
+    },
+    {
+      "filepath": "data/patent_abstracts_10k_diverse.jsonl",
+      "filename": "patent_abstracts_10k_diverse.jsonl",
+      "record_count": 7955,
+      "file_size_mb": 43.5335578918457
     }
   ],
   "ground_truth_files": [
@@ -873,6 +873,12 @@
       "filename": "test_ground_truth.jsonl",
       "record_count": 3,
       "file_size_mb": 0.003170013427734375
+    },
+    {
+      "filepath": "ground_truth_10k.jsonl",
+      "filename": "ground_truth_10k.jsonl",
+      "record_count": 9988,
+      "file_size_mb": 11.116105079650879
     }
   ]
 }

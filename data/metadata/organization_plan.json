@@ -7,23 +7,23 @@
         "reason": "organize raw data"
       },
       {
-        "src": "data/patent_abstracts_100k_diverse.jsonl",
-        "dst": "data/raw/patents_100k.jsonl",
-        "reason": "organize raw data"
-      },
-      {
         "src": "data/patent_abstracts_with_embeddings_large.jsonl",
         "dst": "data/raw/patent_abstracts_with_embeddings_large.jsonl",
         "reason": "organize raw data"
       },
       {
-        "src": "data/patent_abstracts_10k_diverse.jsonl",
-        "dst": "data/raw/patents_10k.jsonl",
+        "src": "data/patent_abstracts_100k_diverse.jsonl",
+        "dst": "data/raw/patents_100k.jsonl",
         "reason": "organize raw data"
       },
       {
         "src": "data/patent_abstracts_with_embeddings.jsonl",
         "dst": "data/raw/patent_abstracts_with_embeddings.jsonl",
+        "reason": "organize raw data"
+      },
+      {
+        "src": "data/patent_abstracts_10k_diverse.jsonl",
+        "dst": "data/raw/patents_10k.jsonl",
         "reason": "organize raw data"
       }
     ]
@@ -254,6 +254,11 @@
       {
         "src": "data/test_ground_truth.jsonl",
         "dst": "data/ground_truth/consolidated/test_ground_truth.jsonl",
+        "reason": "consolidate ground truth"
+      },
+      {
+        "src": "ground_truth_10k.jsonl",
+        "dst": "data/ground_truth/consolidated/ground_truth_10k.jsonl",
         "reason": "consolidate ground truth"
       }
     ]
