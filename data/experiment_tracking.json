@@ -1,0 +1,640 @@
+{
+  "experiments": {
+    "validation_embeddinggemma_20250912_065708": {
+      "config": {
+        "experiment_id": "validation_embeddinggemma_20250912_065708",
+        "dataset_file": "patent_abstracts.jsonl",
+        "model_config": {
+          "name": "embeddinggemma",
+          "context_limit": 2000,
+          "embedding_dim": 768,
+          "char_per_token": 4.0
+        },
+        "chunking_strategies": [
+          "fixed_512",
+          "fixed_768",
+          "overlapping_550",
+          "sentence_boundary_512",
+          "sentence_boundary_768",
+          "semantic"
+        ],
+        "aggregation_methods": [
+          "mean",
+          "max",
+          "weighted",
+          "attention"
+        ],
+        "max_records": 25,
+        "output_prefix": "validation_embeddinggemma_20250912_065708_embeddinggemma",
+        "description": "Comprehensive comparison with 25 patents per model - Model: embeddinggemma, Batch: validation"
+      },
+      "status": "completed",
+      "progress": {
+        "total_patents": 25,
+        "processed_patents": 25,
+        "successful_patents": 25,
+        "failed_patents": 0,
+        "start_time": 1757678270.789373,
+        "current_time": 1757678277.3546839,
+        "estimated_completion": 1757678277.354686
+      },
+      "created_at": 1757678228.7274659,
+      "started_at": 1757678270.789373,
+      "completed_at": 1757678277.390671,
+      "error_message": null,
+      "output_files": {
+        "embeddings": "validation_embeddinggemma_20250912_065708_embeddinggemma_embeddings.jsonl"
+      },
+      "results_summary": {
+        "total_patents": 25,
+        "successful": 25,
+        "failed": 0,
+        "models_used": [
+          "embeddinggemma"
+        ],
+        "processing_time_minutes": 0.11001317898432414,
+        "avg_time_per_patent": 0.2640316295623779
+      }
+    },
+    "validation_bge-m3_20250912_065708": {
+      "config": {
+        "experiment_id": "validation_bge-m3_20250912_065708",
+        "dataset_file": "patent_abstracts.jsonl",
+        "model_config": {
+          "name": "bge-m3",
+          "context_limit": 8192,
+          "embedding_dim": 1024,
+          "char_per_token": 3.5
+        },
+        "chunking_strategies": [
+          "fixed_512",
+          "fixed_768",
+          "overlapping_550",
+          "sentence_boundary_512",
+          "sentence_boundary_768",
+          "semantic"
+        ],
+        "aggregation_methods": [
+          "mean",
+          "max",
+          "weighted",
+          "attention"
+        ],
+        "max_records": 25,
+        "output_prefix": "validation_bge-m3_20250912_065708_bge-m3",
+        "description": "Comprehensive comparison with 25 patents per model - Model: bge-m3, Batch: validation"
+      },
+      "status": "completed",
+      "progress": {
+        "total_patents": 25,
+        "processed_patents": 25,
+        "successful_patents": 25,
+        "failed_patents": 0,
+        "start_time": 1757678278.035768,
+        "current_time": 1757678285.069291,
+        "estimated_completion": 1757678285.069294
+      },
+      "created_at": 1757678228.727891,
+      "started_at": 1757678278.035768,
+      "completed_at": 1757678285.086111,
+      "error_message": null,
+      "output_files": {
+        "embeddings": "validation_bge-m3_20250912_065708_bge-m3_embeddings.jsonl"
+      },
+      "results_summary": {
+        "total_patents": 25,
+        "successful": 25,
+        "failed": 0,
+        "models_used": [
+          "bge-m3"
+        ],
+        "processing_time_minutes": 0.11749888658523559,
+        "avg_time_per_patent": 0.28199732780456543
+      }
+    },
+    "validation_mxbai-embed-large_20250912_065708": {
+      "config": {
+        "experiment_id": "validation_mxbai-embed-large_20250912_065708",
+        "dataset_file": "patent_abstracts.jsonl",
+        "model_config": {
+          "name": "mxbai-embed-large",
+          "context_limit": 512,
+          "embedding_dim": 1024,
+          "char_per_token": 4.0
+        },
+        "chunking_strategies": [
+          "fixed_512",
+          "fixed_768",
+          "overlapping_550",
+          "sentence_boundary_512",
+          "sentence_boundary_768",
+          "semantic"
+        ],
+        "aggregation_methods": [
+          "mean",
+          "max",
+          "weighted",
+          "attention"
+        ],
+        "max_records": 25,
+        "output_prefix": "validation_mxbai-embed-large_20250912_065708_mxbai-embed-large",
+        "description": "Comprehensive comparison with 25 patents per model - Model: mxbai-embed-large, Batch: validation"
+      },
+      "status": "completed",
+      "progress": {
+        "total_patents": 25,
+        "processed_patents": 25,
+        "successful_patents": 25,
+        "failed_patents": 0,
+        "start_time": 1757678286.25739,
+        "current_time": 1757678307.2304509,
+        "estimated_completion": 1757678307.230453
+      },
+      "created_at": 1757678228.728468,
+      "started_at": 1757678286.25739,
+      "completed_at": 1757678307.427283,
+      "error_message": null,
+      "output_files": {
+        "embeddings": "validation_mxbai-embed-large_20250912_065708_mxbai-embed-large_embeddings.jsonl"
+      },
+      "results_summary": {
+        "total_patents": 25,
+        "successful": 25,
+        "failed": 0,
+        "models_used": [
+          "mxbai-embed-large"
+        ],
+        "processing_time_minutes": 0.3528222521146139,
+        "avg_time_per_patent": 0.8467734050750733
+      }
+    },
+    "validation_nomic-embed-text_20250912_065708": {
+      "config": {
+        "experiment_id": "validation_nomic-embed-text_20250912_065708",
+        "dataset_file": "patent_abstracts.jsonl",
+        "model_config": {
+          "name": "nomic-embed-text",
+          "context_limit": 8192,
+          "embedding_dim": 768,
+          "char_per_token": 3.8
+        },
+        "chunking_strategies": [
+          "fixed_512",
+          "fixed_768",
+          "overlapping_550",
+          "sentence_boundary_512",
+          "sentence_boundary_768",
+          "semantic"
+        ],
+        "aggregation_methods": [
+          "mean",
+          "max",
+          "weighted",
+          "attention"
+        ],
+        "max_records": 25,
+        "output_prefix": "validation_nomic-embed-text_20250912_065708_nomic-embed-text",
+        "description": "Comprehensive comparison with 25 patents per model - Model: nomic-embed-text, Batch: validation"
+      },
+      "status": "completed",
+      "progress": {
+        "total_patents": 25,
+        "processed_patents": 25,
+        "successful_patents": 25,
+        "failed_patents": 0,
+        "start_time": 1757678308.643557,
+        "current_time": 1757678310.806025,
+        "estimated_completion": 1757678310.806027
+      },
+      "created_at": 1757678228.7288,
+      "started_at": 1757678308.643556,
+      "completed_at": 1757678310.84656,
+      "error_message": null,
+      "output_files": {
+        "embeddings": "validation_nomic-embed-text_20250912_065708_nomic-embed-text_embeddings.jsonl"
+      },
+      "results_summary": {
+        "total_patents": 25,
+        "successful": 25,
+        "failed": 0,
+        "models_used": [
+          "nomic-embed-text"
+        ],
+        "processing_time_minutes": 0.036706733703613284,
+        "avg_time_per_patent": 0.08809616088867188
+      }
+    },
+    "diverse_10k_full_embeddinggemma_20250912_070401": {
+      "config": {
+        "experiment_id": "diverse_10k_full_embeddinggemma_20250912_070401",
+        "dataset_file": "patent_abstracts_10k_diverse.jsonl",
+        "model_config": {
+          "name": "embeddinggemma",
+          "context_limit": 2000,
+          "embedding_dim": 768,
+          "char_per_token": 4.0
+        },
+        "chunking_strategies": [
+          "fixed_512",
+          "fixed_768",
+          "overlapping_550",
+          "sentence_boundary_512",
+          "sentence_boundary_768",
+          "semantic"
+        ],
+        "aggregation_methods": [
+          "mean",
+          "max",
+          "weighted",
+          "attention"
+        ],
+        "max_records": 100,
+        "output_prefix": "diverse_10k_full_embeddinggemma_20250912_070401_embeddinggemma",
+        "description": "Comprehensive comparison with 100 patents per model - Model: embeddinggemma, Batch: diverse_10k_full"
+      },
+      "status": "running",
+      "progress": {
+        "total_patents": 100,
+        "processed_patents": 3,
+        "successful_patents": 3,
+        "failed_patents": 0,
+        "start_time": 1757678645.226014,
+        "current_time": 1757678646.1649432,
+        "estimated_completion": 1757678676.5236585
+      },
+      "created_at": 1757678641.5862122,
+      "started_at": 1757678645.226013,
+      "completed_at": null,
+      "error_message": null,
+      "output_files": {},
+      "results_summary": {}
+    },
+    "diverse_10k_full_bge-m3_20250912_070401": {
+      "config": {
+        "experiment_id": "diverse_10k_full_bge-m3_20250912_070401",
+        "dataset_file": "patent_abstracts_10k_diverse.jsonl",
+        "model_config": {
+          "name": "bge-m3",
+          "context_limit": 8192,
+          "embedding_dim": 1024,
+          "char_per_token": 3.5
+        },
+        "chunking_strategies": [
+          "fixed_512",
+          "fixed_768",
+          "overlapping_550",
+          "sentence_boundary_512",
+          "sentence_boundary_768",
+          "semantic"
+        ],
+        "aggregation_methods": [
+          "mean",
+          "max",
+          "weighted",
+          "attention"
+        ],
+        "max_records": 100,
+        "output_prefix": "diverse_10k_full_bge-m3_20250912_070401_bge-m3",
+        "description": "Comprehensive comparison with 100 patents per model - Model: bge-m3, Batch: diverse_10k_full"
+      },
+      "status": "pending",
+      "progress": null,
+      "created_at": 1757678641.586934,
+      "started_at": null,
+      "completed_at": null,
+      "error_message": null,
+      "output_files": {},
+      "results_summary": {}
+    },
+    "diverse_10k_full_mxbai-embed-large_20250912_070401": {
+      "config": {
+        "experiment_id": "diverse_10k_full_mxbai-embed-large_20250912_070401",
+        "dataset_file": "patent_abstracts_10k_diverse.jsonl",
+        "model_config": {
+          "name": "mxbai-embed-large",
+          "context_limit": 512,
+          "embedding_dim": 1024,
+          "char_per_token": 4.0
+        },
+        "chunking_strategies": [
+          "fixed_512",
+          "fixed_768",
+          "overlapping_550",
+          "sentence_boundary_512",
+          "sentence_boundary_768",
+          "semantic"
+        ],
+        "aggregation_methods": [
+          "mean",
+          "max",
+          "weighted",
+          "attention"
+        ],
+        "max_records": 100,
+        "output_prefix": "diverse_10k_full_mxbai-embed-large_20250912_070401_mxbai-embed-large",
+        "description": "Comprehensive comparison with 100 patents per model - Model: mxbai-embed-large, Batch: diverse_10k_full"
+      },
+      "status": "pending",
+      "progress": null,
+      "created_at": 1757678641.587693,
+      "started_at": null,
+      "completed_at": null,
+      "error_message": null,
+      "output_files": {},
+      "results_summary": {}
+    },
+    "diverse_10k_full_nomic-embed-text_20250912_070401": {
+      "config": {
+        "experiment_id": "diverse_10k_full_nomic-embed-text_20250912_070401",
+        "dataset_file": "patent_abstracts_10k_diverse.jsonl",
+        "model_config": {
+          "name": "nomic-embed-text",
+          "context_limit": 8192,
+          "embedding_dim": 768,
+          "char_per_token": 3.8
+        },
+        "chunking_strategies": [
+          "fixed_512",
+          "fixed_768",
+          "overlapping_550",
+          "sentence_boundary_512",
+          "sentence_boundary_768",
+          "semantic"
+        ],
+        "aggregation_methods": [
+          "mean",
+          "max",
+          "weighted",
+          "attention"
+        ],
+        "max_records": 100,
+        "output_prefix": "diverse_10k_full_nomic-embed-text_20250912_070401_nomic-embed-text",
+        "description": "Comprehensive comparison with 100 patents per model - Model: nomic-embed-text, Batch: diverse_10k_full"
+      },
+      "status": "pending",
+      "progress": null,
+      "created_at": 1757678641.588105,
+      "started_at": null,
+      "completed_at": null,
+      "error_message": null,
+      "output_files": {},
+      "results_summary": {}
+    },
+    "original_500_embeddinggemma_20250912_070406": {
+      "config": {
+        "experiment_id": "original_500_embeddinggemma_20250912_070406",
+        "dataset_file": "patent_abstracts.jsonl",
+        "model_config": {
+          "name": "embeddinggemma",
+          "context_limit": 2000,
+          "embedding_dim": 768,
+          "char_per_token": 4.0
+        },
+        "chunking_strategies": [
+          "fixed_512",
+          "fixed_768",
+          "overlapping_550",
+          "sentence_boundary_512",
+          "sentence_boundary_768",
+          "semantic"
+        ],
+        "aggregation_methods": [
+          "mean",
+          "max",
+          "weighted",
+          "attention"
+        ],
+        "max_records": 500,
+        "output_prefix": "original_500_embeddinggemma_20250912_070406_embeddinggemma",
+        "description": "Comprehensive comparison with 500 patents per model - Model: embeddinggemma, Batch: original_500"
+      },
+      "status": "completed",
+      "progress": {
+        "total_patents": 500,
+        "processed_patents": 500,
+        "successful_patents": 500,
+        "failed_patents": 0,
+        "start_time": 1757678649.069133,
+        "current_time": 1757678924.010723,
+        "estimated_completion": 1757678924.010728
+      },
+      "created_at": 1757678646.769403,
+      "started_at": 1757678649.069133,
+      "completed_at": 1757678925.358989,
+      "error_message": null,
+      "output_files": {
+        "embeddings": "original_500_embeddinggemma_20250912_070406_embeddinggemma_embeddings.jsonl"
+      },
+      "results_summary": {
+        "total_patents": 500,
+        "successful": 500,
+        "failed": 0,
+        "models_used": [
+          "embeddinggemma"
+        ],
+        "processing_time_minutes": 4.604819333553314,
+        "avg_time_per_patent": 0.5525783200263977
+      }
+    },
+    "original_500_bge-m3_20250912_070406": {
+      "config": {
+        "experiment_id": "original_500_bge-m3_20250912_070406",
+        "dataset_file": "patent_abstracts.jsonl",
+        "model_config": {
+          "name": "bge-m3",
+          "context_limit": 8192,
+          "embedding_dim": 1024,
+          "char_per_token": 3.5
+        },
+        "chunking_strategies": [
+          "fixed_512",
+          "fixed_768",
+          "overlapping_550",
+          "sentence_boundary_512",
+          "sentence_boundary_768",
+          "semantic"
+        ],
+        "aggregation_methods": [
+          "mean",
+          "max",
+          "weighted",
+          "attention"
+        ],
+        "max_records": 500,
+        "output_prefix": "original_500_bge-m3_20250912_070406_bge-m3",
+        "description": "Comprehensive comparison with 500 patents per model - Model: bge-m3, Batch: original_500"
+      },
+      "status": "completed",
+      "progress": {
+        "total_patents": 500,
+        "processed_patents": 500,
+        "successful_patents": 500,
+        "failed_patents": 0,
+        "start_time": 1757678926.186765,
+        "current_time": 1757679129.048587,
+        "estimated_completion": 1757679129.0485911
+      },
+      "created_at": 1757678646.7703521,
+      "started_at": 1757678926.186762,
+      "completed_at": 1757679129.670942,
+      "error_message": null,
+      "output_files": {
+        "embeddings": "original_500_bge-m3_20250912_070406_bge-m3_embeddings.jsonl"
+      },
+      "results_summary": {
+        "total_patents": 500,
+        "successful": 500,
+        "failed": 0,
+        "models_used": [
+          "bge-m3"
+        ],
+        "processing_time_minutes": 3.3913399656613668,
+        "avg_time_per_patent": 0.406960795879364
+      }
+    },
+    "original_500_mxbai-embed-large_20250912_070406": {
+      "config": {
+        "experiment_id": "original_500_mxbai-embed-large_20250912_070406",
+        "dataset_file": "patent_abstracts.jsonl",
+        "model_config": {
+          "name": "mxbai-embed-large",
+          "context_limit": 512,
+          "embedding_dim": 1024,
+          "char_per_token": 4.0
+        },
+        "chunking_strategies": [
+          "fixed_512",
+          "fixed_768",
+          "overlapping_550",
+          "sentence_boundary_512",
+          "sentence_boundary_768",
+          "semantic"
+        ],
+        "aggregation_methods": [
+          "mean",
+          "max",
+          "weighted",
+          "attention"
+        ],
+        "max_records": 500,
+        "output_prefix": "original_500_mxbai-embed-large_20250912_070406_mxbai-embed-large",
+        "description": "Comprehensive comparison with 500 patents per model - Model: mxbai-embed-large, Batch: original_500"
+      },
+      "status": "completed",
+      "progress": {
+        "total_patents": 500,
+        "processed_patents": 500,
+        "successful_patents": 500,
+        "failed_patents": 0,
+        "start_time": 1757679130.834972,
+        "current_time": 1757679694.7367659,
+        "estimated_completion": 1757679694.736774
+      },
+      "created_at": 1757678646.770846,
+      "started_at": 1757679130.834971,
+      "completed_at": 1757679702.253628,
+      "error_message": null,
+      "output_files": {
+        "embeddings": "original_500_mxbai-embed-large_20250912_070406_mxbai-embed-large_embeddings.jsonl"
+      },
+      "results_summary": {
+        "total_patents": 500,
+        "successful": 500,
+        "failed": 0,
+        "models_used": [
+          "mxbai-embed-large"
+        ],
+        "processing_time_minutes": 9.5236270348231,
+        "avg_time_per_patent": 1.142835244178772
+      }
+    },
+    "original_500_nomic-embed-text_20250912_070406": {
+      "config": {
+        "experiment_id": "original_500_nomic-embed-text_20250912_070406",
+        "dataset_file": "patent_abstracts.jsonl",
+        "model_config": {
+          "name": "nomic-embed-text",
+          "context_limit": 8192,
+          "embedding_dim": 768,
+          "char_per_token": 3.8
+        },
+        "chunking_strategies": [
+          "fixed_512",
+          "fixed_768",
+          "overlapping_550",
+          "sentence_boundary_512",
+          "sentence_boundary_768",
+          "semantic"
+        ],
+        "aggregation_methods": [
+          "mean",
+          "max",
+          "weighted",
+          "attention"
+        ],
+        "max_records": 500,
+        "output_prefix": "original_500_nomic-embed-text_20250912_070406_nomic-embed-text",
+        "description": "Comprehensive comparison with 500 patents per model - Model: nomic-embed-text, Batch: original_500"
+      },
+      "status": "completed",
+      "progress": {
+        "total_patents": 500,
+        "processed_patents": 500,
+        "successful_patents": 500,
+        "failed_patents": 0,
+        "start_time": 1757679704.4834402,
+        "current_time": 1757679751.159296,
+        "estimated_completion": 1757679751.159298
+      },
+      "created_at": 1757678646.7712798,
+      "started_at": 1757679704.4834392,
+      "completed_at": 1757679751.622112,
+      "error_message": null,
+      "output_files": {
+        "embeddings": "original_500_nomic-embed-text_20250912_070406_nomic-embed-text_embeddings.jsonl"
+      },
+      "results_summary": {
+        "total_patents": 500,
+        "successful": 500,
+        "failed": 0,
+        "models_used": [
+          "nomic-embed-text"
+        ],
+        "processing_time_minutes": 0.7856308182080587,
+        "avg_time_per_patent": 0.09427569818496705
+      }
+    }
+  },
+  "model_configs": {
+    "embeddinggemma": {
+      "name": "embeddinggemma",
+      "context_limit": 2000,
+      "embedding_dim": 768,
+      "char_per_token": 4.0
+    },
+    "bge-m3": {
+      "name": "bge-m3",
+      "context_limit": 8192,
+      "embedding_dim": 1024,
+      "char_per_token": 3.5
+    },
+    "mxbai-embed-large": {
+      "name": "mxbai-embed-large",
+      "context_limit": 512,
+      "embedding_dim": 1024,
+      "char_per_token": 4.0
+    },
+    "nomic-embed-text": {
+      "name": "nomic-embed-text",
+      "context_limit": 8192,
+      "embedding_dim": 768,
+      "char_per_token": 3.8
+    },
+    "all-MiniLM-L6-v2": {
+      "name": "all-MiniLM-L6-v2",
+      "context_limit": 512,
+      "embedding_dim": 384,
+      "char_per_token": 4.2
+    }
+  }
+}

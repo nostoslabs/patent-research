@@ -1,0 +1,267 @@
+{
+  "raw_files": {
+    "moves": [
+      {
+        "src": "data/patent_abstracts.jsonl",
+        "dst": "data/raw/patent_abstracts.jsonl",
+        "reason": "organize raw data"
+      },
+      {
+        "src": "data/patent_abstracts_100k_diverse.jsonl",
+        "dst": "data/raw/patents_100k.jsonl",
+        "reason": "organize raw data"
+      },
+      {
+        "src": "data/patent_abstracts_with_embeddings_large.jsonl",
+        "dst": "data/raw/patent_abstracts_with_embeddings_large.jsonl",
+        "reason": "organize raw data"
+      },
+      {
+        "src": "data/patent_abstracts_10k_diverse.jsonl",
+        "dst": "data/raw/patents_10k.jsonl",
+        "reason": "organize raw data"
+      },
+      {
+        "src": "data/patent_abstracts_with_embeddings.jsonl",
+        "dst": "data/raw/patent_abstracts_with_embeddings.jsonl",
+        "reason": "organize raw data"
+      }
+    ]
+  },
+  "embeddings": {
+    "moves": [
+      {
+        "src": "production_100k_top2_bge-m3_20250912_150417_bge-m3_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/bge-m3/production_100k_top2_bge-m3_20250912_150417_bge-m3_embeddings.jsonl",
+        "model": "bge-m3",
+        "records": 5600,
+        "reason": "organize bge-m3 embeddings"
+      },
+      {
+        "src": "data/production_top2_bge-m3_20250912_070417_bge-m3_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/bge-m3/production_top2_bge-m3_20250912_070417_bge-m3_embeddings.jsonl",
+        "model": "bge-m3",
+        "records": 1000,
+        "reason": "organize bge-m3 embeddings"
+      },
+      {
+        "src": "data/original_500_bge-m3_20250912_070406_bge-m3_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/bge-m3/original_500_bge-m3_20250912_070406_bge-m3_embeddings.jsonl",
+        "model": "bge-m3",
+        "records": 500,
+        "reason": "organize bge-m3 embeddings"
+      },
+      {
+        "src": "data/diverse_10k_full_bge-m3_20250912_070401_bge-m3_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/bge-m3/diverse_10k_full_bge-m3_20250912_070401_bge-m3_embeddings.jsonl",
+        "model": "bge-m3",
+        "records": 100,
+        "reason": "organize bge-m3 embeddings"
+      },
+      {
+        "src": "production_10k_all_bge-m3_20250912_150410_bge-m3_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/bge-m3/production_10k_all_bge-m3_20250912_150410_bge-m3_embeddings.jsonl",
+        "model": "bge-m3",
+        "records": 100,
+        "reason": "organize bge-m3 embeddings"
+      },
+      {
+        "src": "data/validation_bge-m3_20250912_065708_bge-m3_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/bge-m3/validation_bge-m3_20250912_065708_bge-m3_embeddings.jsonl",
+        "model": "bge-m3",
+        "records": 25,
+        "reason": "organize bge-m3 embeddings"
+      },
+      {
+        "src": "data/original_500_embeddinggemma_20250912_070406_embeddinggemma_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/embeddinggemma/original_500_embeddinggemma_20250912_070406_embeddinggemma_embeddings.jsonl",
+        "model": "embeddinggemma",
+        "records": 500,
+        "reason": "organize embeddinggemma embeddings"
+      },
+      {
+        "src": "data/diverse_10k_full_embeddinggemma_20250912_070401_embeddinggemma_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/embeddinggemma/diverse_10k_full_embeddinggemma_20250912_070401_embeddinggemma_embeddings.jsonl",
+        "model": "embeddinggemma",
+        "records": 100,
+        "reason": "organize embeddinggemma embeddings"
+      },
+      {
+        "src": "production_10k_all_embeddinggemma_20250912_150410_embeddinggemma_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/embeddinggemma/production_10k_all_embeddinggemma_20250912_150410_embeddinggemma_embeddings.jsonl",
+        "model": "embeddinggemma",
+        "records": 100,
+        "reason": "organize embeddinggemma embeddings"
+      },
+      {
+        "src": "data/validation_embeddinggemma_20250912_065708_embeddinggemma_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/embeddinggemma/validation_embeddinggemma_20250912_065708_embeddinggemma_embeddings.jsonl",
+        "model": "embeddinggemma",
+        "records": 25,
+        "reason": "organize embeddinggemma embeddings"
+      },
+      {
+        "src": "data/original_500_mxbai-embed-large_20250912_070406_mxbai-embed-large_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/mxbai-embed-large/original_500_mxbai-embed-large_20250912_070406_mxbai-embed-large_embeddings.jsonl",
+        "model": "mxbai-embed-large",
+        "records": 500,
+        "reason": "organize mxbai-embed-large embeddings"
+      },
+      {
+        "src": "data/diverse_10k_full_mxbai-embed-large_20250912_070401_mxbai-embed-large_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/mxbai-embed-large/diverse_10k_full_mxbai-embed-large_20250912_070401_mxbai-embed-large_embeddings.jsonl",
+        "model": "mxbai-embed-large",
+        "records": 100,
+        "reason": "organize mxbai-embed-large embeddings"
+      },
+      {
+        "src": "production_10k_all_mxbai-embed-large_20250912_150410_mxbai-embed-large_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/mxbai-embed-large/production_10k_all_mxbai-embed-large_20250912_150410_mxbai-embed-large_embeddings.jsonl",
+        "model": "mxbai-embed-large",
+        "records": 100,
+        "reason": "organize mxbai-embed-large embeddings"
+      },
+      {
+        "src": "data/validation_mxbai-embed-large_20250912_065708_mxbai-embed-large_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/mxbai-embed-large/validation_mxbai-embed-large_20250912_065708_mxbai-embed-large_embeddings.jsonl",
+        "model": "mxbai-embed-large",
+        "records": 25,
+        "reason": "organize mxbai-embed-large embeddings"
+      },
+      {
+        "src": "production_100k_remaining_nomic-embed-text_20250912_205647_nomic-embed-text_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/nomic-embed-text/production_100k_remaining_nomic-embed-text_20250912_205647_nomic-embed-text_embeddings.jsonl",
+        "model": "nomic-embed-text",
+        "records": 40000,
+        "reason": "organize nomic-embed-text embeddings"
+      },
+      {
+        "src": "production_100k_top2_nomic-embed-text_20250912_150417_nomic-embed-text_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/nomic-embed-text/production_100k_top2_nomic-embed-text_20250912_150417_nomic-embed-text_embeddings.jsonl",
+        "model": "nomic-embed-text",
+        "records": 10000,
+        "reason": "organize nomic-embed-text embeddings"
+      },
+      {
+        "src": "data/production_top2_nomic-embed-text_20250912_070417_nomic-embed-text_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/nomic-embed-text/production_top2_nomic-embed-text_20250912_070417_nomic-embed-text_embeddings.jsonl",
+        "model": "nomic-embed-text",
+        "records": 1000,
+        "reason": "organize nomic-embed-text embeddings"
+      },
+      {
+        "src": "data/original_500_nomic-embed-text_20250912_070406_nomic-embed-text_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/nomic-embed-text/original_500_nomic-embed-text_20250912_070406_nomic-embed-text_embeddings.jsonl",
+        "model": "nomic-embed-text",
+        "records": 500,
+        "reason": "organize nomic-embed-text embeddings"
+      },
+      {
+        "src": "data/diverse_10k_full_nomic-embed-text_20250912_070401_nomic-embed-text_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/nomic-embed-text/diverse_10k_full_nomic-embed-text_20250912_070401_nomic-embed-text_embeddings.jsonl",
+        "model": "nomic-embed-text",
+        "records": 100,
+        "reason": "organize nomic-embed-text embeddings"
+      },
+      {
+        "src": "production_10k_all_nomic-embed-text_20250912_150410_nomic-embed-text_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/nomic-embed-text/production_10k_all_nomic-embed-text_20250912_150410_nomic-embed-text_embeddings.jsonl",
+        "model": "nomic-embed-text",
+        "records": 100,
+        "reason": "organize nomic-embed-text embeddings"
+      },
+      {
+        "src": "data/validation_nomic-embed-text_20250912_065708_nomic-embed-text_embeddings.jsonl",
+        "dst": "data/embeddings/by_model/nomic-embed-text/validation_nomic-embed-text_20250912_065708_nomic-embed-text_embeddings.jsonl",
+        "model": "nomic-embed-text",
+        "records": 25,
+        "reason": "organize nomic-embed-text embeddings"
+      }
+    ],
+    "consolidations": [
+      {
+        "model": "bge-m3",
+        "target_file": "production_100k_top2_bge-m3_20250912_150417_bge-m3_embeddings.jsonl",
+        "candidate_files": [
+          "data/production_top2_bge-m3_20250912_070417_bge-m3_embeddings.jsonl",
+          "data/original_500_bge-m3_20250912_070406_bge-m3_embeddings.jsonl",
+          "data/diverse_10k_full_bge-m3_20250912_070401_bge-m3_embeddings.jsonl",
+          "production_10k_all_bge-m3_20250912_150410_bge-m3_embeddings.jsonl",
+          "data/validation_bge-m3_20250912_065708_bge-m3_embeddings.jsonl"
+        ],
+        "estimated_total_records": 7325,
+        "potential_space_savings_mb": 41.25801181793213
+      },
+      {
+        "model": "embeddinggemma",
+        "target_file": "data/original_500_embeddinggemma_20250912_070406_embeddinggemma_embeddings.jsonl",
+        "candidate_files": [
+          "data/diverse_10k_full_embeddinggemma_20250912_070401_embeddinggemma_embeddings.jsonl",
+          "production_10k_all_embeddinggemma_20250912_150410_embeddinggemma_embeddings.jsonl",
+          "data/validation_embeddinggemma_20250912_065708_embeddinggemma_embeddings.jsonl"
+        ],
+        "estimated_total_records": 725,
+        "potential_space_savings_mb": 8.255826950073242
+      },
+      {
+        "model": "mxbai-embed-large",
+        "target_file": "data/original_500_mxbai-embed-large_20250912_070406_mxbai-embed-large_embeddings.jsonl",
+        "candidate_files": [
+          "data/diverse_10k_full_mxbai-embed-large_20250912_070401_mxbai-embed-large_embeddings.jsonl",
+          "production_10k_all_mxbai-embed-large_20250912_150410_mxbai-embed-large_embeddings.jsonl",
+          "data/validation_mxbai-embed-large_20250912_065708_mxbai-embed-large_embeddings.jsonl"
+        ],
+        "estimated_total_records": 725,
+        "potential_space_savings_mb": 64.01445388793945
+      },
+      {
+        "model": "nomic-embed-text",
+        "target_file": "production_100k_remaining_nomic-embed-text_20250912_205647_nomic-embed-text_embeddings.jsonl",
+        "candidate_files": [
+          "production_100k_top2_nomic-embed-text_20250912_150417_nomic-embed-text_embeddings.jsonl",
+          "data/production_top2_nomic-embed-text_20250912_070417_nomic-embed-text_embeddings.jsonl",
+          "data/original_500_nomic-embed-text_20250912_070406_nomic-embed-text_embeddings.jsonl",
+          "data/diverse_10k_full_nomic-embed-text_20250912_070401_nomic-embed-text_embeddings.jsonl",
+          "production_10k_all_nomic-embed-text_20250912_150410_nomic-embed-text_embeddings.jsonl",
+          "data/validation_nomic-embed-text_20250912_065708_nomic-embed-text_embeddings.jsonl"
+        ],
+        "estimated_total_records": 51725,
+        "potential_space_savings_mb": 224.48910427093506
+      },
+      {
+        "model": null,
+        "target_file": "data/patent_abstracts_with_embeddings.jsonl",
+        "candidate_files": [
+          "data/test_chunking_embeddings.jsonl"
+        ],
+        "estimated_total_records": 954,
+        "potential_space_savings_mb": 3.0901355743408203
+      }
+    ]
+  },
+  "ground_truth": {
+    "moves": [
+      {
+        "src": "data/patent_ground_truth_100.jsonl",
+        "dst": "data/ground_truth/consolidated/ground_truth_100.jsonl",
+        "reason": "consolidate ground truth"
+      },
+      {
+        "src": "data/patent_ground_truth_500.jsonl",
+        "dst": "data/ground_truth/consolidated/ground_truth_500.jsonl",
+        "reason": "consolidate ground truth"
+      },
+      {
+        "src": "data/test_ground_truth.jsonl",
+        "dst": "data/ground_truth/consolidated/test_ground_truth.jsonl",
+        "reason": "consolidate ground truth"
+      }
+    ]
+  },
+  "evaluations": {
+    "moves": []
+  },
+  "archive": {
+    "moves": []
+  }
+}

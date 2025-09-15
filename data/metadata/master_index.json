@@ -1,0 +1,878 @@
+{
+  "patents": {},
+  "models": {},
+  "experiments": {},
+  "statistics": {
+    "total_embedding_files": 23,
+    "total_ground_truth_files": 3,
+    "total_raw_files": 5,
+    "models_with_embeddings": [
+      "bge-m3",
+      "embeddinggemma",
+      "mxbai-embed-large",
+      "nomic-embed-text",
+      null
+    ],
+    "largest_embedding_file": {
+      "model": "nomic-embed-text",
+      "dataset_size": 100000,
+      "dataset_type": null,
+      "experiment_type": "production",
+      "date": "20250912_205647",
+      "filepath": "production_100k_remaining_nomic-embed-text_20250912_205647_nomic-embed-text_embeddings.jsonl",
+      "filename": "production_100k_remaining_nomic-embed-text_20250912_205647_nomic-embed-text_embeddings.jsonl",
+      "record_count": 40000,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "nomic-embed-text"
+      ],
+      "file_size_mb": 765.6658306121826,
+      "last_modified": 1757827670.0758326
+    },
+    "total_patents_with_embeddings": {
+      "bge-m3": 7325,
+      "embeddinggemma": 725,
+      "mxbai-embed-large": 725,
+      "nomic-embed-text": 51725,
+      "null": 954
+    }
+  },
+  "last_updated": "2025-09-14 22:04:05",
+  "embeddings_by_model": {
+    "bge-m3": [
+      {
+        "model": "bge-m3",
+        "dataset_size": 100000,
+        "dataset_type": null,
+        "experiment_type": "production",
+        "date": "20250912_150417",
+        "filepath": "production_100k_top2_bge-m3_20250912_150417_bge-m3_embeddings.jsonl",
+        "filename": "production_100k_top2_bge-m3_20250912_150417_bge-m3_embeddings.jsonl",
+        "record_count": 5600,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "bge-m3"
+        ],
+        "file_size_mb": 135.55186653137207,
+        "last_modified": 1757714103.5963979
+      },
+      {
+        "model": "bge-m3",
+        "dataset_size": 2,
+        "dataset_type": null,
+        "experiment_type": "production",
+        "date": "20250912_070417",
+        "filepath": "data/production_top2_bge-m3_20250912_070417_bge-m3_embeddings.jsonl",
+        "filename": "production_top2_bge-m3_20250912_070417_bge-m3_embeddings.jsonl",
+        "record_count": 1000,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "bge-m3"
+        ],
+        "file_size_mb": 24.049898147583008,
+        "last_modified": 1757679349.5575898
+      },
+      {
+        "model": "bge-m3",
+        "dataset_size": 500,
+        "dataset_type": null,
+        "experiment_type": "original",
+        "date": "20250912_070406",
+        "filepath": "data/original_500_bge-m3_20250912_070406_bge-m3_embeddings.jsonl",
+        "filename": "original_500_bge-m3_20250912_070406_bge-m3_embeddings.jsonl",
+        "record_count": 500,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "bge-m3"
+        ],
+        "file_size_mb": 11.83542537689209,
+        "last_modified": 1757679129.670693
+      },
+      {
+        "model": "bge-m3",
+        "dataset_size": 10000,
+        "dataset_type": null,
+        "experiment_type": "diverse",
+        "date": "20250912_070401",
+        "filepath": "data/diverse_10k_full_bge-m3_20250912_070401_bge-m3_embeddings.jsonl",
+        "filename": "diverse_10k_full_bge-m3_20250912_070401_bge-m3_embeddings.jsonl",
+        "record_count": 100,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "bge-m3"
+        ],
+        "file_size_mb": 2.388827323913574,
+        "last_modified": 1757678747.276074
+      },
+      {
+        "model": "bge-m3",
+        "dataset_size": 10000,
+        "dataset_type": null,
+        "experiment_type": "production",
+        "date": "20250912_150410",
+        "filepath": "production_10k_all_bge-m3_20250912_150410_bge-m3_embeddings.jsonl",
+        "filename": "production_10k_all_bge-m3_20250912_150410_bge-m3_embeddings.jsonl",
+        "record_count": 100,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "bge-m3"
+        ],
+        "file_size_mb": 2.388821601867676,
+        "last_modified": 1757707564.4654534
+      },
+      {
+        "model": "bge-m3",
+        "dataset_size": 3,
+        "dataset_type": null,
+        "experiment_type": "validation",
+        "date": "20250912_065708",
+        "filepath": "data/validation_bge-m3_20250912_065708_bge-m3_embeddings.jsonl",
+        "filename": "validation_bge-m3_20250912_065708_bge-m3_embeddings.jsonl",
+        "record_count": 25,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "bge-m3"
+        ],
+        "file_size_mb": 0.5950393676757812,
+        "last_modified": 1757678285.0860245
+      }
+    ],
+    "embeddinggemma": [
+      {
+        "model": "embeddinggemma",
+        "dataset_size": 500,
+        "dataset_type": null,
+        "experiment_type": "original",
+        "date": "20250912_070406",
+        "filepath": "data/original_500_embeddinggemma_20250912_070406_embeddinggemma_embeddings.jsonl",
+        "filename": "original_500_embeddinggemma_20250912_070406_embeddinggemma_embeddings.jsonl",
+        "record_count": 500,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "embeddinggemma"
+        ],
+        "file_size_mb": 22.576457023620605,
+        "last_modified": 1757678925.3587224
+      },
+      {
+        "model": "embeddinggemma",
+        "dataset_size": 10000,
+        "dataset_type": null,
+        "experiment_type": "diverse",
+        "date": "20250912_070401",
+        "filepath": "data/diverse_10k_full_embeddinggemma_20250912_070401_embeddinggemma_embeddings.jsonl",
+        "filename": "diverse_10k_full_embeddinggemma_20250912_070401_embeddinggemma_embeddings.jsonl",
+        "record_count": 100,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "embeddinggemma"
+        ],
+        "file_size_mb": 3.6721086502075195,
+        "last_modified": 1757678691.586289
+      },
+      {
+        "model": "embeddinggemma",
+        "dataset_size": 10000,
+        "dataset_type": null,
+        "experiment_type": "production",
+        "date": "20250912_150410",
+        "filepath": "production_10k_all_embeddinggemma_20250912_150410_embeddinggemma_embeddings.jsonl",
+        "filename": "production_10k_all_embeddinggemma_20250912_150410_embeddinggemma_embeddings.jsonl",
+        "record_count": 100,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "embeddinggemma"
+        ],
+        "file_size_mb": 3.672085762023926,
+        "last_modified": 1757707506.3321931
+      },
+      {
+        "model": "embeddinggemma",
+        "dataset_size": 20250912,
+        "dataset_type": null,
+        "experiment_type": "validation",
+        "date": "20250912_065708",
+        "filepath": "data/validation_embeddinggemma_20250912_065708_embeddinggemma_embeddings.jsonl",
+        "filename": "validation_embeddinggemma_20250912_065708_embeddinggemma_embeddings.jsonl",
+        "record_count": 25,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "embeddinggemma"
+        ],
+        "file_size_mb": 0.9116325378417969,
+        "last_modified": 1757678277.3902314
+      }
+    ],
+    "mxbai-embed-large": [
+      {
+        "model": "mxbai-embed-large",
+        "dataset_size": 500,
+        "dataset_type": null,
+        "experiment_type": "original",
+        "date": "20250912_070406",
+        "filepath": "data/original_500_mxbai-embed-large_20250912_070406_mxbai-embed-large_embeddings.jsonl",
+        "filename": "original_500_mxbai-embed-large_20250912_070406_mxbai-embed-large_embeddings.jsonl",
+        "record_count": 500,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "mxbai-embed-large"
+        ],
+        "file_size_mb": 125.41752910614014,
+        "last_modified": 1757679702.2533534
+      },
+      {
+        "model": "mxbai-embed-large",
+        "dataset_size": 10000,
+        "dataset_type": null,
+        "experiment_type": "diverse",
+        "date": "20250912_070401",
+        "filepath": "data/diverse_10k_full_mxbai-embed-large_20250912_070401_mxbai-embed-large_embeddings.jsonl",
+        "filename": "diverse_10k_full_mxbai-embed-large_20250912_070401_mxbai-embed-large_embeddings.jsonl",
+        "record_count": 100,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "mxbai-embed-large"
+        ],
+        "file_size_mb": 28.787431716918945,
+        "last_modified": 1757678899.816889
+      },
+      {
+        "model": "mxbai-embed-large",
+        "dataset_size": 10000,
+        "dataset_type": null,
+        "experiment_type": "production",
+        "date": "20250912_150410",
+        "filepath": "production_10k_all_mxbai-embed-large_20250912_150410_mxbai-embed-large_embeddings.jsonl",
+        "filename": "production_10k_all_mxbai-embed-large_20250912_150410_mxbai-embed-large_embeddings.jsonl",
+        "record_count": 100,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "mxbai-embed-large"
+        ],
+        "file_size_mb": 28.787364959716797,
+        "last_modified": 1757707725.765556
+      },
+      {
+        "model": "mxbai-embed-large",
+        "dataset_size": 20250912,
+        "dataset_type": null,
+        "experiment_type": "validation",
+        "date": "20250912_065708",
+        "filepath": "data/validation_mxbai-embed-large_20250912_065708_mxbai-embed-large_embeddings.jsonl",
+        "filename": "validation_mxbai-embed-large_20250912_065708_mxbai-embed-large_embeddings.jsonl",
+        "record_count": 25,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "mxbai-embed-large"
+        ],
+        "file_size_mb": 6.439657211303711,
+        "last_modified": 1757678307.4265354
+      }
+    ],
+    "nomic-embed-text": [
+      {
+        "model": "nomic-embed-text",
+        "dataset_size": 100000,
+        "dataset_type": null,
+        "experiment_type": "production",
+        "date": "20250912_205647",
+        "filepath": "production_100k_remaining_nomic-embed-text_20250912_205647_nomic-embed-text_embeddings.jsonl",
+        "filename": "production_100k_remaining_nomic-embed-text_20250912_205647_nomic-embed-text_embeddings.jsonl",
+        "record_count": 40000,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "nomic-embed-text"
+        ],
+        "file_size_mb": 765.6658306121826,
+        "last_modified": 1757827670.0758326
+      },
+      {
+        "model": "nomic-embed-text",
+        "dataset_size": 100000,
+        "dataset_type": null,
+        "experiment_type": "production",
+        "date": "20250912_150417",
+        "filepath": "production_100k_top2_nomic-embed-text_20250912_150417_nomic-embed-text_embeddings.jsonl",
+        "filename": "production_100k_top2_nomic-embed-text_20250912_150417_nomic-embed-text_embeddings.jsonl",
+        "record_count": 10000,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "nomic-embed-text"
+        ],
+        "file_size_mb": 191.90913772583008,
+        "last_modified": 1757711429.645388
+      },
+      {
+        "model": "nomic-embed-text",
+        "dataset_size": 2,
+        "dataset_type": null,
+        "experiment_type": "production",
+        "date": "20250912_070417",
+        "filepath": "data/production_top2_nomic-embed-text_20250912_070417_nomic-embed-text_embeddings.jsonl",
+        "filename": "production_top2_nomic-embed-text_20250912_070417_nomic-embed-text_embeddings.jsonl",
+        "record_count": 1000,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "nomic-embed-text"
+        ],
+        "file_size_mb": 19.02267074584961,
+        "last_modified": 1757678884.8152986
+      },
+      {
+        "model": "nomic-embed-text",
+        "dataset_size": 500,
+        "dataset_type": null,
+        "experiment_type": "original",
+        "date": "20250912_070406",
+        "filepath": "data/original_500_nomic-embed-text_20250912_070406_nomic-embed-text_embeddings.jsonl",
+        "filename": "original_500_nomic-embed-text_20250912_070406_nomic-embed-text_embeddings.jsonl",
+        "record_count": 500,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "nomic-embed-text"
+        ],
+        "file_size_mb": 9.315690994262695,
+        "last_modified": 1757679751.622006
+      },
+      {
+        "model": "nomic-embed-text",
+        "dataset_size": 10000,
+        "dataset_type": null,
+        "experiment_type": "diverse",
+        "date": "20250912_070401",
+        "filepath": "data/diverse_10k_full_nomic-embed-text_20250912_070401_nomic-embed-text_embeddings.jsonl",
+        "filename": "diverse_10k_full_nomic-embed-text_20250912_070401_nomic-embed-text_embeddings.jsonl",
+        "record_count": 100,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "nomic-embed-text"
+        ],
+        "file_size_mb": 1.886378288269043,
+        "last_modified": 1757678916.259663
+      },
+      {
+        "model": "nomic-embed-text",
+        "dataset_size": 10000,
+        "dataset_type": null,
+        "experiment_type": "production",
+        "date": "20250912_150410",
+        "filepath": "production_10k_all_nomic-embed-text_20250912_150410_nomic-embed-text_embeddings.jsonl",
+        "filename": "production_10k_all_nomic-embed-text_20250912_150410_nomic-embed-text_embeddings.jsonl",
+        "record_count": 100,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "nomic-embed-text"
+        ],
+        "file_size_mb": 1.8863916397094727,
+        "last_modified": 1757707741.0863767
+      },
+      {
+        "model": "nomic-embed-text",
+        "dataset_size": 20250912,
+        "dataset_type": null,
+        "experiment_type": "validation",
+        "date": "20250912_065708",
+        "filepath": "data/validation_nomic-embed-text_20250912_065708_nomic-embed-text_embeddings.jsonl",
+        "filename": "validation_nomic-embed-text_20250912_065708_nomic-embed-text_embeddings.jsonl",
+        "record_count": 25,
+        "has_multi_model": true,
+        "has_direct_embedding": false,
+        "available_models": [
+          "nomic-embed-text"
+        ],
+        "file_size_mb": 0.46883487701416016,
+        "last_modified": 1757678310.8464737
+      }
+    ],
+    "null": [
+      {
+        "model": null,
+        "dataset_size": null,
+        "dataset_type": null,
+        "experiment_type": "unknown",
+        "date": null,
+        "filepath": "data/patent_abstracts_with_embeddings.jsonl",
+        "filename": "patent_abstracts_with_embeddings.jsonl",
+        "record_count": 929,
+        "has_multi_model": false,
+        "has_direct_embedding": false,
+        "file_size_mb": 17.436453819274902,
+        "last_modified": 1757675464.7752595
+      },
+      {
+        "model": null,
+        "dataset_size": null,
+        "dataset_type": null,
+        "experiment_type": "unknown",
+        "date": null,
+        "filepath": "data/test_chunking_embeddings.jsonl",
+        "filename": "test_chunking_embeddings.jsonl",
+        "record_count": 25,
+        "has_multi_model": false,
+        "has_direct_embedding": false,
+        "file_size_mb": 3.0901355743408203,
+        "last_modified": 1757677114.8320642
+      }
+    ]
+  },
+  "all_embedding_files": [
+    {
+      "model": "bge-m3",
+      "dataset_size": 3,
+      "dataset_type": null,
+      "experiment_type": "validation",
+      "date": "20250912_065708",
+      "filepath": "data/validation_bge-m3_20250912_065708_bge-m3_embeddings.jsonl",
+      "filename": "validation_bge-m3_20250912_065708_bge-m3_embeddings.jsonl",
+      "record_count": 25,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "bge-m3"
+      ],
+      "file_size_mb": 0.5950393676757812,
+      "last_modified": 1757678285.0860245
+    },
+    {
+      "model": "bge-m3",
+      "dataset_size": 10000,
+      "dataset_type": null,
+      "experiment_type": "diverse",
+      "date": "20250912_070401",
+      "filepath": "data/diverse_10k_full_bge-m3_20250912_070401_bge-m3_embeddings.jsonl",
+      "filename": "diverse_10k_full_bge-m3_20250912_070401_bge-m3_embeddings.jsonl",
+      "record_count": 100,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "bge-m3"
+      ],
+      "file_size_mb": 2.388827323913574,
+      "last_modified": 1757678747.276074
+    },
+    {
+      "model": "bge-m3",
+      "dataset_size": 500,
+      "dataset_type": null,
+      "experiment_type": "original",
+      "date": "20250912_070406",
+      "filepath": "data/original_500_bge-m3_20250912_070406_bge-m3_embeddings.jsonl",
+      "filename": "original_500_bge-m3_20250912_070406_bge-m3_embeddings.jsonl",
+      "record_count": 500,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "bge-m3"
+      ],
+      "file_size_mb": 11.83542537689209,
+      "last_modified": 1757679129.670693
+    },
+    {
+      "model": "bge-m3",
+      "dataset_size": 2,
+      "dataset_type": null,
+      "experiment_type": "production",
+      "date": "20250912_070417",
+      "filepath": "data/production_top2_bge-m3_20250912_070417_bge-m3_embeddings.jsonl",
+      "filename": "production_top2_bge-m3_20250912_070417_bge-m3_embeddings.jsonl",
+      "record_count": 1000,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "bge-m3"
+      ],
+      "file_size_mb": 24.049898147583008,
+      "last_modified": 1757679349.5575898
+    },
+    {
+      "model": "bge-m3",
+      "dataset_size": 10000,
+      "dataset_type": null,
+      "experiment_type": "production",
+      "date": "20250912_150410",
+      "filepath": "production_10k_all_bge-m3_20250912_150410_bge-m3_embeddings.jsonl",
+      "filename": "production_10k_all_bge-m3_20250912_150410_bge-m3_embeddings.jsonl",
+      "record_count": 100,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "bge-m3"
+      ],
+      "file_size_mb": 2.388821601867676,
+      "last_modified": 1757707564.4654534
+    },
+    {
+      "model": "bge-m3",
+      "dataset_size": 100000,
+      "dataset_type": null,
+      "experiment_type": "production",
+      "date": "20250912_150417",
+      "filepath": "production_100k_top2_bge-m3_20250912_150417_bge-m3_embeddings.jsonl",
+      "filename": "production_100k_top2_bge-m3_20250912_150417_bge-m3_embeddings.jsonl",
+      "record_count": 5600,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "bge-m3"
+      ],
+      "file_size_mb": 135.55186653137207,
+      "last_modified": 1757714103.5963979
+    },
+    {
+      "model": "embeddinggemma",
+      "dataset_size": 20250912,
+      "dataset_type": null,
+      "experiment_type": "validation",
+      "date": "20250912_065708",
+      "filepath": "data/validation_embeddinggemma_20250912_065708_embeddinggemma_embeddings.jsonl",
+      "filename": "validation_embeddinggemma_20250912_065708_embeddinggemma_embeddings.jsonl",
+      "record_count": 25,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "embeddinggemma"
+      ],
+      "file_size_mb": 0.9116325378417969,
+      "last_modified": 1757678277.3902314
+    },
+    {
+      "model": "embeddinggemma",
+      "dataset_size": 10000,
+      "dataset_type": null,
+      "experiment_type": "diverse",
+      "date": "20250912_070401",
+      "filepath": "data/diverse_10k_full_embeddinggemma_20250912_070401_embeddinggemma_embeddings.jsonl",
+      "filename": "diverse_10k_full_embeddinggemma_20250912_070401_embeddinggemma_embeddings.jsonl",
+      "record_count": 100,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "embeddinggemma"
+      ],
+      "file_size_mb": 3.6721086502075195,
+      "last_modified": 1757678691.586289
+    },
+    {
+      "model": "embeddinggemma",
+      "dataset_size": 500,
+      "dataset_type": null,
+      "experiment_type": "original",
+      "date": "20250912_070406",
+      "filepath": "data/original_500_embeddinggemma_20250912_070406_embeddinggemma_embeddings.jsonl",
+      "filename": "original_500_embeddinggemma_20250912_070406_embeddinggemma_embeddings.jsonl",
+      "record_count": 500,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "embeddinggemma"
+      ],
+      "file_size_mb": 22.576457023620605,
+      "last_modified": 1757678925.3587224
+    },
+    {
+      "model": "embeddinggemma",
+      "dataset_size": 10000,
+      "dataset_type": null,
+      "experiment_type": "production",
+      "date": "20250912_150410",
+      "filepath": "production_10k_all_embeddinggemma_20250912_150410_embeddinggemma_embeddings.jsonl",
+      "filename": "production_10k_all_embeddinggemma_20250912_150410_embeddinggemma_embeddings.jsonl",
+      "record_count": 100,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "embeddinggemma"
+      ],
+      "file_size_mb": 3.672085762023926,
+      "last_modified": 1757707506.3321931
+    },
+    {
+      "model": "mxbai-embed-large",
+      "dataset_size": 20250912,
+      "dataset_type": null,
+      "experiment_type": "validation",
+      "date": "20250912_065708",
+      "filepath": "data/validation_mxbai-embed-large_20250912_065708_mxbai-embed-large_embeddings.jsonl",
+      "filename": "validation_mxbai-embed-large_20250912_065708_mxbai-embed-large_embeddings.jsonl",
+      "record_count": 25,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "mxbai-embed-large"
+      ],
+      "file_size_mb": 6.439657211303711,
+      "last_modified": 1757678307.4265354
+    },
+    {
+      "model": "mxbai-embed-large",
+      "dataset_size": 10000,
+      "dataset_type": null,
+      "experiment_type": "diverse",
+      "date": "20250912_070401",
+      "filepath": "data/diverse_10k_full_mxbai-embed-large_20250912_070401_mxbai-embed-large_embeddings.jsonl",
+      "filename": "diverse_10k_full_mxbai-embed-large_20250912_070401_mxbai-embed-large_embeddings.jsonl",
+      "record_count": 100,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "mxbai-embed-large"
+      ],
+      "file_size_mb": 28.787431716918945,
+      "last_modified": 1757678899.816889
+    },
+    {
+      "model": "mxbai-embed-large",
+      "dataset_size": 500,
+      "dataset_type": null,
+      "experiment_type": "original",
+      "date": "20250912_070406",
+      "filepath": "data/original_500_mxbai-embed-large_20250912_070406_mxbai-embed-large_embeddings.jsonl",
+      "filename": "original_500_mxbai-embed-large_20250912_070406_mxbai-embed-large_embeddings.jsonl",
+      "record_count": 500,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "mxbai-embed-large"
+      ],
+      "file_size_mb": 125.41752910614014,
+      "last_modified": 1757679702.2533534
+    },
+    {
+      "model": "mxbai-embed-large",
+      "dataset_size": 10000,
+      "dataset_type": null,
+      "experiment_type": "production",
+      "date": "20250912_150410",
+      "filepath": "production_10k_all_mxbai-embed-large_20250912_150410_mxbai-embed-large_embeddings.jsonl",
+      "filename": "production_10k_all_mxbai-embed-large_20250912_150410_mxbai-embed-large_embeddings.jsonl",
+      "record_count": 100,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "mxbai-embed-large"
+      ],
+      "file_size_mb": 28.787364959716797,
+      "last_modified": 1757707725.765556
+    },
+    {
+      "model": "nomic-embed-text",
+      "dataset_size": 20250912,
+      "dataset_type": null,
+      "experiment_type": "validation",
+      "date": "20250912_065708",
+      "filepath": "data/validation_nomic-embed-text_20250912_065708_nomic-embed-text_embeddings.jsonl",
+      "filename": "validation_nomic-embed-text_20250912_065708_nomic-embed-text_embeddings.jsonl",
+      "record_count": 25,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "nomic-embed-text"
+      ],
+      "file_size_mb": 0.46883487701416016,
+      "last_modified": 1757678310.8464737
+    },
+    {
+      "model": "nomic-embed-text",
+      "dataset_size": 10000,
+      "dataset_type": null,
+      "experiment_type": "diverse",
+      "date": "20250912_070401",
+      "filepath": "data/diverse_10k_full_nomic-embed-text_20250912_070401_nomic-embed-text_embeddings.jsonl",
+      "filename": "diverse_10k_full_nomic-embed-text_20250912_070401_nomic-embed-text_embeddings.jsonl",
+      "record_count": 100,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "nomic-embed-text"
+      ],
+      "file_size_mb": 1.886378288269043,
+      "last_modified": 1757678916.259663
+    },
+    {
+      "model": "nomic-embed-text",
+      "dataset_size": 500,
+      "dataset_type": null,
+      "experiment_type": "original",
+      "date": "20250912_070406",
+      "filepath": "data/original_500_nomic-embed-text_20250912_070406_nomic-embed-text_embeddings.jsonl",
+      "filename": "original_500_nomic-embed-text_20250912_070406_nomic-embed-text_embeddings.jsonl",
+      "record_count": 500,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "nomic-embed-text"
+      ],
+      "file_size_mb": 9.315690994262695,
+      "last_modified": 1757679751.622006
+    },
+    {
+      "model": "nomic-embed-text",
+      "dataset_size": 2,
+      "dataset_type": null,
+      "experiment_type": "production",
+      "date": "20250912_070417",
+      "filepath": "data/production_top2_nomic-embed-text_20250912_070417_nomic-embed-text_embeddings.jsonl",
+      "filename": "production_top2_nomic-embed-text_20250912_070417_nomic-embed-text_embeddings.jsonl",
+      "record_count": 1000,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "nomic-embed-text"
+      ],
+      "file_size_mb": 19.02267074584961,
+      "last_modified": 1757678884.8152986
+    },
+    {
+      "model": "nomic-embed-text",
+      "dataset_size": 10000,
+      "dataset_type": null,
+      "experiment_type": "production",
+      "date": "20250912_150410",
+      "filepath": "production_10k_all_nomic-embed-text_20250912_150410_nomic-embed-text_embeddings.jsonl",
+      "filename": "production_10k_all_nomic-embed-text_20250912_150410_nomic-embed-text_embeddings.jsonl",
+      "record_count": 100,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "nomic-embed-text"
+      ],
+      "file_size_mb": 1.8863916397094727,
+      "last_modified": 1757707741.0863767
+    },
+    {
+      "model": "nomic-embed-text",
+      "dataset_size": 100000,
+      "dataset_type": null,
+      "experiment_type": "production",
+      "date": "20250912_150417",
+      "filepath": "production_100k_top2_nomic-embed-text_20250912_150417_nomic-embed-text_embeddings.jsonl",
+      "filename": "production_100k_top2_nomic-embed-text_20250912_150417_nomic-embed-text_embeddings.jsonl",
+      "record_count": 10000,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "nomic-embed-text"
+      ],
+      "file_size_mb": 191.90913772583008,
+      "last_modified": 1757711429.645388
+    },
+    {
+      "model": "nomic-embed-text",
+      "dataset_size": 100000,
+      "dataset_type": null,
+      "experiment_type": "production",
+      "date": "20250912_205647",
+      "filepath": "production_100k_remaining_nomic-embed-text_20250912_205647_nomic-embed-text_embeddings.jsonl",
+      "filename": "production_100k_remaining_nomic-embed-text_20250912_205647_nomic-embed-text_embeddings.jsonl",
+      "record_count": 40000,
+      "has_multi_model": true,
+      "has_direct_embedding": false,
+      "available_models": [
+        "nomic-embed-text"
+      ],
+      "file_size_mb": 765.6658306121826,
+      "last_modified": 1757827670.0758326
+    },
+    {
+      "model": null,
+      "dataset_size": null,
+      "dataset_type": null,
+      "experiment_type": "unknown",
+      "date": null,
+      "filepath": "data/patent_abstracts_with_embeddings.jsonl",
+      "filename": "patent_abstracts_with_embeddings.jsonl",
+      "record_count": 929,
+      "has_multi_model": false,
+      "has_direct_embedding": false,
+      "file_size_mb": 17.436453819274902,
+      "last_modified": 1757675464.7752595
+    },
+    {
+      "model": null,
+      "dataset_size": null,
+      "dataset_type": null,
+      "experiment_type": "unknown",
+      "date": null,
+      "filepath": "data/test_chunking_embeddings.jsonl",
+      "filename": "test_chunking_embeddings.jsonl",
+      "record_count": 25,
+      "has_multi_model": false,
+      "has_direct_embedding": false,
+      "file_size_mb": 3.0901355743408203,
+      "last_modified": 1757677114.8320642
+    }
+  ],
+  "raw_patent_files": [
+    {
+      "filepath": "data/patent_abstracts.jsonl",
+      "filename": "patent_abstracts.jsonl",
+      "record_count": 929,
+      "file_size_mb": 3.719472885131836
+    },
+    {
+      "filepath": "data/patent_abstracts_100k_diverse.jsonl",
+      "filename": "patent_abstracts_100k_diverse.jsonl",
+      "record_count": 46362,
+      "file_size_mb": 254.72459030151367
+    },
+    {
+      "filepath": "data/patent_abstracts_with_embeddings_large.jsonl",
+      "filename": "patent_abstracts_with_embeddings_large.jsonl",
+      "record_count": 0,
+      "file_size_mb": 0.0
+    },
+    {
+      "filepath": "data/patent_abstracts_10k_diverse.jsonl",
+      "filename": "patent_abstracts_10k_diverse.jsonl",
+      "record_count": 7955,
+      "file_size_mb": 43.5335578918457
+    },
+    {
+      "filepath": "data/patent_abstracts_with_embeddings.jsonl",
+      "filename": "patent_abstracts_with_embeddings.jsonl",
+      "record_count": 929,
+      "file_size_mb": 17.436453819274902
+    }
+  ],
+  "ground_truth_files": [
+    {
+      "filepath": "data/patent_ground_truth_100.jsonl",
+      "filename": "patent_ground_truth_100.jsonl",
+      "record_count": 50,
+      "file_size_mb": 0.05433940887451172
+    },
+    {
+      "filepath": "data/patent_ground_truth_500.jsonl",
+      "filename": "patent_ground_truth_500.jsonl",
+      "record_count": 500,
+      "file_size_mb": 0.5274124145507812
+    },
+    {
+      "filepath": "data/test_ground_truth.jsonl",
+      "filename": "test_ground_truth.jsonl",
+      "record_count": 3,
+      "file_size_mb": 0.003170013427734375
+    }
+  ]
+}

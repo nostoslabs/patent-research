@@ -1,0 +1,29 @@
+Ground Truth Quality Evaluation Report
+==================================================
+
+Dataset: ground_truth_partial_500.jsonl
+Total ground truth comparisons: 500
+
+Model Rankings (by Pearson Correlation with LLM):
+--------------------------------------------------
+embeddinggemma       | r=0.458 (p=0.000) | Spearman=0.482
+nomic-embed-text     | r=0.404 (p=0.000) | Spearman=0.393
+bge-m3               | r=0.103 (p=0.021) | Spearman=0.144
+
+Detailed Metrics:
+--------------------------------------------------
+           Model  Pearson Correlation  P-Value  Spearman Correlation  Mean Similarity  Std Similarity  Total Comparisons  High Agreement Rate  Low Agreement Rate
+nomic-embed-text                0.404    0.000                 0.393            0.497           0.107                500                0.000               0.010
+          bge-m3                0.103    0.021                 0.144            0.499           0.204                500                0.000               0.118
+  embeddinggemma                0.458    0.000                 0.482            0.498           0.132                500                0.000               0.086
+
+Interpretation:
+--------------------
+• Pearson Correlation: Linear relationship with LLM scores (higher = better)
+• Spearman Correlation: Monotonic relationship (rank-based correlation)
+• High Agreement Rate: % of cases where both LLM and embedding agree on high similarity
+• Low Agreement Rate: % of cases where both agree on low similarity
+
+🏆 Best performing model: embeddinggemma
+   Correlation with human-like judgments: 0.458
+   Statistical significance: ✅ Significant

@@ -1,0 +1,180 @@
+{
+  "clustering_performance": {
+    "original": {
+      "strategy": "original",
+      "num_samples": 25,
+      "embedding_dim": 768,
+      "kmeans": {
+        "kmeans_3": {
+          "n_clusters": 3,
+          "silhouette_score": 0.5335870735942791,
+          "inertia": 326687.76378193375
+        },
+        "kmeans_5": {
+          "n_clusters": 5,
+          "silhouette_score": 0.2851117032990522,
+          "inertia": 211612.9069059768
+        },
+        "kmeans_7": {
+          "n_clusters": 7,
+          "silhouette_score": 0.3204948417572196,
+          "inertia": 159248.5812917271
+        },
+        "kmeans_10": {
+          "n_clusters": 10,
+          "silhouette_score": 0.30458339626270875,
+          "inertia": 106333.08579283557
+        }
+      },
+      "dbscan": {
+        "dbscan_0.3": {
+          "eps": 0.3,
+          "n_clusters": 0,
+          "n_noise": 25,
+          "silhouette_score": -1.0
+        },
+        "dbscan_0.5": {
+          "eps": 0.5,
+          "n_clusters": 0,
+          "n_noise": 25,
+          "silhouette_score": -1.0
+        },
+        "dbscan_0.7": {
+          "eps": 0.7,
+          "n_clusters": 0,
+          "n_noise": 25,
+          "silhouette_score": -1.0
+        }
+      },
+      "best_clustering": {
+        "silhouette_score": 0.5335870735942791,
+        "config": {
+          "n_clusters": 3,
+          "silhouette_score": 0.5335870735942791,
+          "inertia": 326687.76378193375
+        }
+      }
+    }
+  },
+  "similarity_preservation": {},
+  "processing_efficiency": {
+    "original_embedding": {
+      "mean_time": 0.1502774715423584,
+      "median_time": 0.1602029800415039,
+      "std_time": 0.07684040411236531
+    },
+    "chunking_strategies": {
+      "fixed_512": {
+        "mean_time": 0.5727250576019287,
+        "median_time": 0.5727250576019287,
+        "std_time": 0.09167790412902832,
+        "samples": 2
+      },
+      "fixed_768": {
+        "mean_time": 0.449052095413208,
+        "median_time": 0.449052095413208,
+        "std_time": 0.11426496505737305,
+        "samples": 2
+      },
+      "overlapping_550": {
+        "mean_time": 0.5993518829345703,
+        "median_time": 0.5993518829345703,
+        "std_time": 0.10555577278137207,
+        "samples": 2
+      },
+      "sentence_boundary_512": {
+        "mean_time": 0.5690580606460571,
+        "median_time": 0.5690580606460571,
+        "std_time": 0.10527694225311279,
+        "samples": 2
+      },
+      "sentence_boundary_768": {
+        "mean_time": 0.48765742778778076,
+        "median_time": 0.48765742778778076,
+        "std_time": 0.07266747951507568,
+        "samples": 2
+      },
+      "semantic": {
+        "mean_time": 7.197067022323608,
+        "median_time": 7.197067022323608,
+        "std_time": 3.5183770656585693,
+        "samples": 2
+      }
+    }
+  },
+  "chunk_statistics": {
+    "fixed_512": {
+      "avg_num_chunks": 6.0,
+      "avg_chunk_size": 203.0,
+      "avg_token_count": 454.0833333333333,
+      "chunk_size_std": 0.0,
+      "samples": 2
+    },
+    "fixed_768": {
+      "avg_num_chunks": 4.0,
+      "avg_chunk_size": 203.0,
+      "avg_token_count": 681.125,
+      "chunk_size_std": 0.0,
+      "samples": 2
+    },
+    "overlapping_550": {
+      "avg_num_chunks": 6.0,
+      "avg_chunk_size": 203.0,
+      "avg_token_count": 495.75,
+      "chunk_size_std": 0.0,
+      "samples": 2
+    },
+    "sentence_boundary_512": {
+      "avg_num_chunks": 6.0,
+      "avg_chunk_size": 203.0,
+      "avg_token_count": 447.75,
+      "chunk_size_std": 0.0,
+      "samples": 2
+    },
+    "sentence_boundary_768": {
+      "avg_num_chunks": 4.5,
+      "avg_chunk_size": 203.0,
+      "avg_token_count": 597.0,
+      "chunk_size_std": 0.0,
+      "samples": 2
+    },
+    "semantic": {
+      "avg_num_chunks": 38.5,
+      "avg_chunk_size": 155.3116883116883,
+      "avg_token_count": 70.14285714285714,
+      "chunk_size_std": 54.33858731302809,
+      "samples": 2
+    }
+  },
+  "dataset_info": {
+    "total_patents": 25,
+    "strategies_analyzed": [
+      "original",
+      "fixed_512_mean",
+      "fixed_512_max",
+      "fixed_512_weighted",
+      "fixed_512_attention",
+      "fixed_768_mean",
+      "fixed_768_max",
+      "fixed_768_weighted",
+      "fixed_768_attention",
+      "overlapping_550_mean",
+      "overlapping_550_max",
+      "overlapping_550_weighted",
+      "overlapping_550_attention",
+      "sentence_boundary_512_mean",
+      "sentence_boundary_512_max",
+      "sentence_boundary_512_weighted",
+      "sentence_boundary_512_attention",
+      "sentence_boundary_768_mean",
+      "sentence_boundary_768_max",
+      "sentence_boundary_768_weighted",
+      "sentence_boundary_768_attention",
+      "semantic_mean",
+      "semantic_max",
+      "semantic_weighted",
+      "semantic_attention"
+    ],
+    "analysis_timestamp": "2025-09-12 06:38:34"
+  }
+}

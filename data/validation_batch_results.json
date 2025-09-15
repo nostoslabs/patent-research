@@ -1,0 +1,32 @@
+{
+  "batch_start_time": 1757678228.7290938,
+  "experiments": {
+    "validation_embeddinggemma_20250912_065708": {
+      "status": "completed",
+      "execution_time": 48.66240072250366,
+      "output_file": "validation_embeddinggemma_20250912_065708_embeddinggemma_embeddings.jsonl"
+    },
+    "validation_bge-m3_20250912_065708": {
+      "status": "completed",
+      "execution_time": 7.6951587200164795,
+      "output_file": "validation_bge-m3_20250912_065708_bge-m3_embeddings.jsonl"
+    },
+    "validation_mxbai-embed-large_20250912_065708": {
+      "status": "completed",
+      "execution_time": 22.342689990997314,
+      "output_file": "validation_mxbai-embed-large_20250912_065708_mxbai-embed-large_embeddings.jsonl"
+    },
+    "validation_nomic-embed-text_20250912_065708": {
+      "status": "completed",
+      "execution_time": 3.417786121368408,
+      "output_file": "validation_nomic-embed-text_20250912_065708_nomic-embed-text_embeddings.jsonl"
+    }
+  },
+  "summary": {
+    "total_experiments": 4,
+    "completed": 4,
+    "failed": 0,
+    "total_time_minutes": 1.3686346689860025,
+    "average_time_per_experiment": 0.3421586672465006
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "batch_start_time": 1757678641.588566,
+  "experiments": {
+    "diverse_10k_full_embeddinggemma_20250912_070401": {
+      "status": "completed",
+      "execution_time": 49.999459743499756,
+      "output_file": "diverse_10k_full_embeddinggemma_20250912_070401_embeddinggemma_embeddings.jsonl"
+    },
+    "diverse_10k_full_bge-m3_20250912_070401": {
+      "status": "completed",
+      "execution_time": 55.68933415412903,
+      "output_file": "diverse_10k_full_bge-m3_20250912_070401_bge-m3_embeddings.jsonl"
+    },
+    "diverse_10k_full_mxbai-embed-large_20250912_070401": {
+      "status": "completed",
+      "execution_time": 152.54845023155212,
+      "output_file": "diverse_10k_full_mxbai-embed-large_20250912_070401_mxbai-embed-large_embeddings.jsonl"
+    },
+    "diverse_10k_full_nomic-embed-text_20250912_070401": {
+      "status": "completed",
+      "execution_time": 16.435400247573853,
+      "output_file": "diverse_10k_full_nomic-embed-text_20250912_070401_nomic-embed-text_embeddings.jsonl"
+    }
+  },
+  "summary": {
+    "total_experiments": 4,
+    "completed": 4,
+    "failed": 0,
+    "total_time_minutes": 4.577878363927206,
+    "average_time_per_experiment": 1.1444695909818015
+  }
+}

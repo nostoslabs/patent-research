@@ -1,0 +1,37 @@
+{
+  "correlation_analysis": {
+    "pearson_correlation": 0.2750478130882591,
+    "pearson_p_value": 0.05321689687472834,
+    "spearman_correlation": 0.3583951740264368,
+    "spearman_p_value": 0.0105987229235693,
+    "mean_absolute_error": 0.3264071707447372,
+    "root_mean_square_error": 0.40184379333340514,
+    "sample_size": 50
+  },
+  "embedding_similarity_stats": {
+    "mean": 0.4933694063116282,
+    "std": 0.246054424594967,
+    "min": 0.2523578124476661,
+    "max": 0.8802137655150788,
+    "median": 0.373629130886184
+  },
+  "llm_similarity_stats": {
+    "mean": 0.16799999999999998,
+    "std": 0.0957036241396813,
+    "min": 0.1,
+    "max": 0.3,
+    "median": 0.1
+  },
+  "classification_analysis": {
+    "same_classification_pairs": 8,
+    "different_classification_pairs": 42,
+    "same_class_avg_llm_similarity": 0.2,
+    "diff_class_avg_llm_similarity": 0.16190476190476188
+  },
+  "sample_composition": {
+    "total_pairs": 50,
+    "high_embedding_similarity_pairs": 16,
+    "medium_embedding_similarity_pairs": 4,
+    "low_embedding_similarity_pairs": 30
+  }
+}

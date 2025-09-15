@@ -1,0 +1,32 @@
+{
+  "batch_start_time": 1757678646.7717519,
+  "experiments": {
+    "original_500_embeddinggemma_20250912_070406": {
+      "status": "completed",
+      "execution_time": 278.5931541919708,
+      "output_file": "original_500_embeddinggemma_20250912_070406_embeddinggemma_embeddings.jsonl"
+    },
+    "original_500_bge-m3_20250912_070406": {
+      "status": "completed",
+      "execution_time": 204.30931425094604,
+      "output_file": "original_500_bge-m3_20250912_070406_bge-m3_embeddings.jsonl"
+    },
+    "original_500_mxbai-embed-large_20250912_070406": {
+      "status": "completed",
+      "execution_time": 572.6105620861053,
+      "output_file": "original_500_mxbai-embed-large_20250912_070406_mxbai-embed-large_embeddings.jsonl"
+    },
+    "original_500_nomic-embed-text_20250912_070406": {
+      "status": "completed",
+      "execution_time": 49.34097409248352,
+      "output_file": "original_500_nomic-embed-text_20250912_070406_nomic-embed-text_embeddings.jsonl"
+    }
+  },
+  "summary": {
+    "total_experiments": 4,
+    "completed": 4,
+    "failed": 0,
+    "total_time_minutes": 18.414234519004822,
+    "average_time_per_experiment": 4.6035586297512054
+  }
+}

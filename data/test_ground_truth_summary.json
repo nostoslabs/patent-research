@@ -1,0 +1,12 @@
+{
+  "total_pairs_requested": 3,
+  "pairs_generated": 3,
+  "pairs_processed": 3,
+  "successful_evaluations": 3,
+  "failed_evaluations": 0,
+  "success_rate": 1.0,
+  "processing_time_minutes": 0.05572375059127808,
+  "output_file": "test_ground_truth.jsonl",
+  "provider_used": "auto",
+  "timestamp": "2025-09-12 07:39:12"
+}

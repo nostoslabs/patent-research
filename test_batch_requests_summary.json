@@ -1,0 +1,8 @@
+{
+  "total_pairs_requested": 5,
+  "requests_generated": 5,
+  "generation_time_seconds": 3.0882816314697266,
+  "output_file": "test_batch_requests.jsonl",
+  "estimated_cost_usd": 0.00043125,
+  "timestamp": "2025-09-14 21:45:57"
+}

@@ -1,0 +1,10 @@
+{
+  "total_patents_tested": 25,
+  "successful_comparisons": 25,
+  "success_rate": 1.0,
+  "average_overlap_count": 2.4,
+  "average_precision_at_5": 0.19200000000000003,
+  "average_precision_at_10": 0.24,
+  "output_file": "baseline_comparison_100.jsonl",
+  "timestamp": "2025-09-12 10:04:59"
+}

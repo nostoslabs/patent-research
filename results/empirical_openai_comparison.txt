@@ -1,0 +1,33 @@
+Empirical OpenAI vs Existing Models Comparison
+==================================================
+
+Sample Size: 100 patent pairs
+Date: 2025-09-12 16:28:56
+
+OpenAI text-embedding-3-small (EMPIRICAL):
+---------------------------------------------
+Pearson Correlation: 0.636
+P-Value: 0.000000
+Statistical Significance: ✅ Significant
+Spearman Correlation: 0.616
+Mean Similarity: 0.384
+Total Cost: $0.0001
+Total Tokens: 5046
+
+Existing Embedding Model (Validated):
+----------------------------------------
+Pearson Correlation: 0.536
+P-Value: 0.000000
+Statistical Significance: ✅ Significant
+Spearman Correlation: 0.499
+Mean Similarity: 0.503
+Total Cost: $0.00
+
+EMPIRICAL QUALITY COMPARISON:
+------------------------------
+🏆 OPENAI SUPERIOR: 18.7% better correlation
+
+Empirical Evidence:
+- OpenAI actual performance: r=0.636
+- Existing model performance: r=0.536
+- Sample size: 100 pairs

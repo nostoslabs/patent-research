@@ -1,0 +1,21 @@
+{
+  "batch_start_time": 1757707457.185348,
+  "experiments": {
+    "production_100k_top2_nomic-embed-text_20250912_150417": {
+      "status": "completed",
+      "execution_time": 3972.5093569755554,
+      "output_file": "production_100k_top2_nomic-embed-text_20250912_150417_nomic-embed-text_embeddings.jsonl"
+    },
+    "production_100k_top2_bge-m3_20250912_150417": {
+      "status": "failed",
+      "error": "[Errno 32] Broken pipe"
+    }
+  },
+  "summary": {
+    "total_experiments": 2,
+    "completed": 1,
+    "failed": 1,
+    "total_time_minutes": 110.78954071601233,
+    "average_time_per_experiment": 55.39477035800616
+  }
+}

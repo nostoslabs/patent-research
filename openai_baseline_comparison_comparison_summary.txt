@@ -1,0 +1,25 @@
+OpenAI Baseline Comparison Report
+==================================================
+
+OpenAI text-embedding-3-small Performance:
+----------------------------------------
+Total patents processed: 100
+Average processing time: 0.28s per patent
+Total tokens used: 66,551
+Total cost: $0.0013
+Embedding dimension: 1536
+Patents requiring truncation: 0/100 (0.0%)
+Average truncation: 0.0%
+
+Comparison with Existing Models:
+----------------------------------------
+
+NOMIC-EMBED-TEXT:
+  Processing time: 0.00s per patent (processing time not recorded)
+  Cost: $0.00 (vs $0.0013 for OpenAI)
+  Embedding dimension: 768
+  Truncation required: 0/100 (0.0%)
+  ⚠️ Processing time comparison not available
+  💰 Cost savings: $0.0013 (100% reduction)
+
+Report generated: 2025-09-12 16:02:53

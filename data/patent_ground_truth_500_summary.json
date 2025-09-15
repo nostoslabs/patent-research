@@ -1,0 +1,12 @@
+{
+  "total_pairs_requested": 500,
+  "pairs_generated": 500,
+  "pairs_processed": 500,
+  "successful_evaluations": 500,
+  "failed_evaluations": 0,
+  "success_rate": 1.0,
+  "processing_time_minutes": 5.636801715691885,
+  "output_file": "data/patent_ground_truth_500.jsonl",
+  "provider_used": "google",
+  "timestamp": "2025-09-12 15:35:40"
+}

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/c/projects/patent_research/continuous_embedding_job.py", line 10, in <module>
+    from generate_embeddings import generate_embedding, test_ollama_connection
+ImportError: cannot import name 'test_ollama_connection' from 'generate_embeddings' (/Users/c/projects/patent_research/generate_embeddings.py)

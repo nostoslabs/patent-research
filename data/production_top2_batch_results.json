@@ -1,0 +1,22 @@
+{
+  "batch_start_time": 1757678657.6382,
+  "experiments": {
+    "production_top2_nomic-embed-text_20250912_070417": {
+      "status": "completed",
+      "execution_time": 227.1811501979828,
+      "output_file": "production_top2_nomic-embed-text_20250912_070417_nomic-embed-text_embeddings.jsonl"
+    },
+    "production_top2_bge-m3_20250912_070417": {
+      "status": "completed",
+      "execution_time": 464.7437570095062,
+      "output_file": "production_top2_bge-m3_20250912_070417_bge-m3_embeddings.jsonl"
+    }
+  },
+  "summary": {
+    "total_experiments": 2,
+    "completed": 2,
+    "failed": 0,
+    "total_time_minutes": 11.532082362969716,
+    "average_time_per_experiment": 5.766041181484858
+  }
+}

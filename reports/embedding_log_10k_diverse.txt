@@ -1,0 +1,18 @@
+Starting continuous embedding generation...
+Input file: patent_abstracts_100k_diverse.jsonl
+Output file: patent_abstracts_with_embeddings_large.jsonl
+Model: embeddinggemma
+Batch size: 50
+Save frequency: every 10 records
+------------------------------------------------------------
+Model embeddinggemma ready. Embedding dimension: 768
+Loading patents...
+Loaded 46362 patents
+46362 patents remaining to process
+Processing record 1/46362: patent_30376
+
+Error during processing: 'list' object has no attribute 'tolist'
+
+Processing session complete!
+Total time: 0.0 minutes
+Final progress: 46362/46362 patents

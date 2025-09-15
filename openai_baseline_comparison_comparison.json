@@ -1,0 +1,29 @@
+{
+  "openai_metrics": {
+    "model_name": "text-embedding-3-small",
+    "total_patents": 100,
+    "avg_processing_time": 0.2762459921836853,
+    "total_tokens": 66551,
+    "total_cost": 0.00133102,
+    "embedding_dimension": 1536,
+    "truncation_required": 0,
+    "avg_truncation_percentage": 0,
+    "quality_score": null
+  },
+  "existing_models": {
+    "nomic-embed-text": {
+      "model_name": "nomic-embed-text",
+      "total_patents": 100,
+      "avg_processing_time": 0.0,
+      "total_tokens": 0,
+      "total_cost": 0.0,
+      "embedding_dimension": 768,
+      "truncation_required": 0,
+      "avg_truncation_percentage": 0.0,
+      "quality_score": null
+    }
+  },
+  "quality_comparison": {},
+  "cost_analysis": {},
+  "timestamp": "2025-09-12T16:02:53.311996"
+}
