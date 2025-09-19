@@ -1,0 +1,23 @@
+{
+  "sample_size": 8494,
+  "openai": {
+    "pearson_r": 0.555940473053397,
+    "pearson_p": 0.0,
+    "spearman_r": 0.5590836547623235,
+    "spearman_p": 0.0,
+    "mean_similarity": 0.3124558950801487,
+    "std_similarity": 0.12613134926360925
+  },
+  "nomic": {
+    "pearson_r": 0.5204428335031349,
+    "pearson_p": 0.0,
+    "spearman_r": 0.5211718138319996,
+    "spearman_p": 0.0,
+    "mean_similarity": 0.47814718130618805,
+    "std_similarity": 0.10769781905151937
+  },
+  "llm_scores": {
+    "mean": 0.15265481516364493,
+    "std": 0.09210514072626873
+  }
+}

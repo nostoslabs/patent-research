@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-09-16T05:55:54.688711",
+  "checks": {
+    "master_embeddings": {
+      "total_patents": 40403,
+      "embeddings_per_model": {
+        "nomic-embed-text": 40220,
+        "bge-m3": 6139,
+        "openai_text-embedding-3-small": 5850
+      },
+      "dimensions_per_model": {
+        "nomic-embed-text": [
+          768
+        ],
+        "bge-m3": [
+          1024
+        ],
+        "openai_text-embedding-3-small": [
+          1536
+        ]
+      }
+    },
+    "ground_truth": {
+      "total_pairs": 9988
+    },
+    "file_sizes": {
+      "master_embeddings_mb": 875.42,
+      "ground_truth_mb": 11.47
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

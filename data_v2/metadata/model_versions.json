@@ -1,0 +1,27 @@
+{
+  "generated_at": "2025-09-16T05:55:54.688465",
+  "models": {
+    "openai_text-embedding-3-small": {
+      "provider": "OpenAI",
+      "dimension": 1536,
+      "max_tokens": 8191,
+      "generation_date": "2025-09-15",
+      "api_version": "2023-05-15"
+    },
+    "nomic-embed-text": {
+      "provider": "Nomic AI",
+      "dimension": 768,
+      "max_tokens": 8192,
+      "generation_date": "2025-09-12",
+      "local_inference": true
+    },
+    "bge-m3": {
+      "provider": "BAAI",
+      "dimension": 1024,
+      "max_tokens": 8192,
+      "generation_date": "2025-09-12",
+      "local_inference": true,
+      "multilingual": true
+    }
+  }
+}

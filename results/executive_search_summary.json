@@ -1,0 +1,16 @@
+{
+  "key_metrics": {
+    "openai_accuracy": "100.0%",
+    "nomic_accuracy": "100.0%",
+    "performance_gap": "+0%",
+    "correlation_gap": "+8%"
+  },
+  "business_impact": {
+    "daily_searches": 50,
+    "openai_accurate_results": "250",
+    "nomic_accurate_results": "250",
+    "cost_per_query_openai": "$0.00002",
+    "cost_per_query_nomic": "$0.00000"
+  },
+  "recommendation": "Both models perform similarly. Use nomic-embed-text for cost savings unless budget allows OpenAI."
+}

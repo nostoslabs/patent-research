@@ -1,0 +1,31 @@
+{
+  "start_time": "2025-09-16T05:55:30.153732",
+  "patents_processed": 40403,
+  "embeddings_consolidated": 52209,
+  "ground_truth_pairs": 9988,
+  "models_found": [
+    "bge-m3",
+    "openai_text-embedding-3-small",
+    "nomic-embed-text"
+  ],
+  "files_processed": [
+    "data/patent_abstracts.json",
+    "results/openai_embeddings_final.jsonl",
+    "data/embeddings/by_model/nomic-embed-text/test_chunking_embeddings.jsonl",
+    "data/embeddings/by_model/nomic-embed-text/production_100k_remaining_nomic-embed-text_20250912_205647_nomic-embed-text_embeddings.jsonl",
+    "data/embeddings/by_model/nomic-embed-text/production_10k_all_nomic-embed-text_20250912_150410_nomic-embed-text_embeddings.jsonl",
+    "data/embeddings/by_model/nomic-embed-text/diverse_10k_full_nomic-embed-text_20250912_070401_nomic-embed-text_embeddings.jsonl",
+    "data/embeddings/by_model/nomic-embed-text/production_100k_top2_nomic-embed-text_20250912_150417_nomic-embed-text_embeddings.jsonl",
+    "data/embeddings/by_model/nomic-embed-text/original_500_nomic-embed-text_20250912_070406_nomic-embed-text_embeddings.jsonl",
+    "data/embeddings/by_model/nomic-embed-text/production_top2_nomic-embed-text_20250912_070417_nomic-embed-text_embeddings.jsonl",
+    "data/embeddings/by_model/nomic-embed-text/validation_nomic-embed-text_20250912_065708_nomic-embed-text_embeddings.jsonl",
+    "data/embeddings/by_model/bge-m3/validation_bge-m3_20250912_065708_bge-m3_embeddings.jsonl",
+    "data/embeddings/by_model/bge-m3/production_top2_bge-m3_20250912_070417_bge-m3_embeddings.jsonl",
+    "data/embeddings/by_model/bge-m3/original_500_bge-m3_20250912_070406_bge-m3_embeddings.jsonl",
+    "data/embeddings/by_model/bge-m3/production_10k_all_bge-m3_20250912_150410_bge-m3_embeddings.jsonl",
+    "data/embeddings/by_model/bge-m3/diverse_10k_full_bge-m3_20250912_070401_bge-m3_embeddings.jsonl",
+    "data/embeddings/by_model/bge-m3/production_100k_top2_bge-m3_20250912_150417_bge-m3_embeddings.jsonl",
+    "data/ground_truth/consolidated/ground_truth_10k.jsonl"
+  ],
+  "end_time": "2025-09-16T05:55:54.688575"
+}

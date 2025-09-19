@@ -1,0 +1,13 @@
+{
+  "max_chars": 30000,
+  "total_requests": 6862,
+  "included": 6861,
+  "excluded": 1,
+  "excluded_patents": [
+    {
+      "patent_id": "patent_63162",
+      "char_count": 32505,
+      "estimated_tokens": 8126.25
+    }
+  ]
+}

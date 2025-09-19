@@ -1,0 +1,20 @@
+[
+  {
+    "Model": "OpenAI text-embedding-3-small",
+    "Precision@5": "0.0%",
+    "Precision@10": "0.0%",
+    "Business Impact": "\u274c Low accuracy - Not recommended"
+  },
+  {
+    "Model": "nomic-embed-text",
+    "Precision@5": "0.0%",
+    "Precision@10": "0.0%",
+    "Business Impact": "\u274c Low accuracy - Not recommended"
+  },
+  {
+    "Model": "bge-m3",
+    "Precision@5": "0.0%",
+    "Precision@10": "0.0%",
+    "Business Impact": "\u274c Low accuracy - Not recommended"
+  }
+]

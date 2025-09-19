@@ -1,0 +1,73 @@
+{
+  "sample_size": 5245,
+  "openai": {
+    "pearson_r": 0.5855776898206879,
+    "pearson_p": 0.0,
+    "spearman_r": 0.591685729777626,
+    "spearman_p": 0.0,
+    "mean_similarity": 0.3154095883306427,
+    "std_similarity": 0.12836825232226806
+  },
+  "nomic": {
+    "pearson_r": 0.539945848258,
+    "pearson_p": 0.0,
+    "spearman_r": 0.5469374031813209,
+    "spearman_p": 0.0,
+    "mean_similarity": 0.4842188288863413,
+    "std_similarity": 0.10693177624009935
+  },
+  "bge_m3": {
+    "pearson_r": 0.14860914544509057,
+    "pearson_p": 2.7619788558308487e-27,
+    "spearman_r": 0.21195562167059448,
+    "spearman_p": 2.4108311746944964e-54,
+    "mean_similarity": 0.5320545435806657,
+    "std_similarity": 0.2296561205331963
+  },
+  "llm_scores": {
+    "mean": 0.1573403241182078,
+    "std": 0.09509655674200168
+  },
+  "valid_pairs": [
+    [
+      "patent_30376",
+      "patent_2247"
+    ],
+    [
+      "patent_30376",
+      "patent_31402"
+    ],
+    [
+      "patent_30376",
+      "patent_322"
+    ],
+    [
+      "patent_30376",
+      "patent_43923"
+    ],
+    [
+      "patent_30376",
+      "patent_61200"
+    ],
+    [
+      "patent_30376",
+      "patent_22836"
+    ],
+    [
+      "patent_30376",
+      "patent_25104"
+    ],
+    [
+      "patent_30376",
+      "patent_36510"
+    ],
+    [
+      "patent_30376",
+      "patent_26556"
+    ],
+    [
+      "patent_30376",
+      "patent_9236"
+    ]
+  ]
+}

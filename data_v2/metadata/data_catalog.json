@@ -1,0 +1,21 @@
+{
+  "generated_at": "2025-09-16T05:55:54.688252",
+  "total_patents": 40403,
+  "total_embedding_vectors": 52209,
+  "total_ground_truth_pairs": 9988,
+  "models_available": [
+    "bge-m3",
+    "openai_text-embedding-3-small",
+    "nomic-embed-text"
+  ],
+  "files": {
+    "master_embeddings": "master_patent_embeddings.jsonl",
+    "ground_truth": "ground_truth_similarities.jsonl",
+    "patent_metadata": "patent_metadata.jsonl"
+  },
+  "statistics": {
+    "avg_embeddings_per_patent": 1.29,
+    "models_found": 3,
+    "source_files_processed": 17
+  }
+}

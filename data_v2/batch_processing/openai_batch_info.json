@@ -1,0 +1,8 @@
+{
+  "batch_id": "batch_68c8714489e881908034582d750f3ad4",
+  "file_id": "file-RNEFwwmFDu8f9PpZZHEKkE",
+  "status": "validating",
+  "created_at": 1757966660,
+  "input_file": "openai_batch_chunk_06.jsonl",
+  "description": "Patent embeddings for ground truth evaluation"
+}
