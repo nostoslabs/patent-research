@@ -27,7 +27,8 @@
       "Bash(ollama:*)",
       "Bash(curl:*)",
       "Read(//home/c/**)",
-      "Bash(/bashes)"
+      "Bash(/bashes)",
+      "Bash(gh auth:*)"
     ],
     "deny": [],
     "ask": []
