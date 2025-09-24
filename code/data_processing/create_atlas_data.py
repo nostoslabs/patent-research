@@ -13,6 +13,11 @@ import numpy as np
 from pathlib import Path
 from typing import Dict, List, Tuple
 from sklearn.decomposition import PCA
+
+# Add utilities import
+import sys
+sys.path.append(str(Path(__file__).parent.parent / "utilities"))
+from file_utils import smart_jsonl_reader
 from sklearn.manifold import TSNE
 import umap
 
@@ -36,30 +41,23 @@ def load_multi_model_patents(master_file: str, min_models: int = 2) -> List[Dict
 
     multi_model_patents = []
 
-    with open(master_file, 'r') as f:
-        for line_num, line in enumerate(f, 1):
-            if line.strip():
-                try:
-                    data = json.loads(line.strip())
-                    embeddings = data.get('embeddings', {})
+    with smart_jsonl_reader(master_file) as jsonl_data:
+        for line_num, data in enumerate(jsonl_data, 1):
+            embeddings = data.get('embeddings', {})
 
-                    if len(embeddings) >= min_models:
-                        # Add some basic text for visualization if available
-                        text = data.get('abstract', '')[:500] or f"Patent {data.get('patent_id', 'unknown')}"
+            if len(embeddings) >= min_models:
+                # Add some basic text for visualization if available
+                text = data.get('abstract', '')[:500] or f"Patent {data.get('patent_id', 'unknown')}"
 
-                        patent_record = {
-                            'patent_id': data.get('patent_id', ''),
-                            'text': text,
-                            'classification': data.get('classification', ''),
-                            'embeddings': embeddings,
-                            'model_count': len(embeddings),
-                            'has_all_three': len(embeddings) == 3
-                        }
-                        multi_model_patents.append(patent_record)
-
-                except Exception as e:
-                    logger.warning(f"Error processing line {line_num}: {e}")
-                    continue
+                patent_record = {
+                    'patent_id': data.get('patent_id', ''),
+                    'text': text,
+                    'classification': data.get('classification', ''),
+                    'embeddings': embeddings,
+                    'model_count': len(embeddings),
+                    'has_all_three': len(embeddings) == 3
+                }
+                multi_model_patents.append(patent_record)
 
     logger.info(f"Loaded {len(multi_model_patents)} patents with multiple models")
     return multi_model_patents

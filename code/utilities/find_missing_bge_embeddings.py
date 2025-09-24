@@ -11,6 +11,11 @@ import logging
 from pathlib import Path
 from typing import Dict, List, Set
 
+# Add utilities import
+import sys
+sys.path.append(str(Path(__file__).parent))
+from file_utils import smart_jsonl_reader
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
@@ -36,57 +41,50 @@ def find_missing_bge_patents(master_file: str) -> List[Dict]:
         'no_text_available': 0
     }
 
-    with open(master_file, 'r') as f:
-        for line_num, line in enumerate(f, 1):
-            if line.strip():
-                stats['total_patents'] += 1
+    with smart_jsonl_reader(master_file) as jsonl_data:
+        for line_num, data in enumerate(jsonl_data, 1):
+            stats['total_patents'] += 1
 
-                try:
-                    data = json.loads(line.strip())
-                    embeddings = data.get('embeddings', {})
+            embeddings = data.get('embeddings', {})
 
-                    # Check if has both OpenAI and nomic
-                    has_openai = 'openai_text-embedding-3-small' in embeddings
-                    has_nomic = 'nomic-embed-text' in embeddings
-                    has_bge = 'bge-m3' in embeddings
+            # Check if has both OpenAI and nomic
+            has_openai = 'openai_text-embedding-3-small' in embeddings
+            has_nomic = 'nomic-embed-text' in embeddings
+            has_bge = 'bge-m3' in embeddings
 
-                    if has_openai and has_nomic:
-                        stats['has_openai_and_nomic'] += 1
+            if has_openai and has_nomic:
+                stats['has_openai_and_nomic'] += 1
 
-                        if has_bge:
-                            stats['has_all_three'] += 1
-                        else:
-                            stats['missing_bge'] += 1
+                if has_bge:
+                    stats['has_all_three'] += 1
+                else:
+                    stats['missing_bge'] += 1
 
-                            # Get text content for embedding generation
-                            abstract = data.get('abstract', '')
-                            full_text = data.get('full_text', '')
+                    # Get text content for embedding generation
+                    abstract = data.get('abstract', '')
+                    full_text = data.get('full_text', '')
 
-                            # Use abstract if available, otherwise truncated full_text
-                            text_for_embedding = abstract
-                            if not text_for_embedding and full_text:
-                                text_for_embedding = full_text[:8000]  # BGE-M3 token limit
+                    # Use abstract if available, otherwise truncated full_text
+                    text_for_embedding = abstract
+                    if not text_for_embedding and full_text:
+                        text_for_embedding = full_text[:8000]  # BGE-M3 token limit
 
-                            if text_for_embedding:
-                                patent_record = {
-                                    'patent_id': data.get('patent_id', ''),
-                                    'abstract': abstract,
-                                    'full_text': full_text[:500] if full_text else '',  # Truncated for display
-                                    'classification': data.get('classification', ''),
-                                    'text_for_embedding': text_for_embedding,
-                                    'text_length': len(text_for_embedding),
-                                    'source': 'abstract' if abstract else 'full_text'
-                                }
-                                missing_bge_patents.append(patent_record)
-                            else:
-                                stats['no_text_available'] += 1
+                    if text_for_embedding:
+                        patent_record = {
+                            'patent_id': data.get('patent_id', ''),
+                            'abstract': abstract,
+                            'full_text': full_text[:500] if full_text else '',  # Truncated for display
+                            'classification': data.get('classification', ''),
+                            'text_for_embedding': text_for_embedding,
+                            'text_length': len(text_for_embedding),
+                            'source': 'abstract' if abstract else 'full_text'
+                        }
+                        missing_bge_patents.append(patent_record)
+                    else:
+                        stats['no_text_available'] += 1
 
-                except Exception as e:
-                    logger.warning(f"Error processing line {line_num}: {e}")
-                    continue
-
-                if line_num % 10000 == 0:
-                    logger.info(f"Processed {line_num:,} patents...")
+            if line_num % 10000 == 0:
+                logger.info(f"Processed {line_num:,} patents...")
 
     logger.info("Analysis complete!")
 
