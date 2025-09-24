@@ -22,50 +22,64 @@ This repository contains a comprehensive research pipeline for evaluating and im
 
 ```
 patent_research/
-├── README.md                    # This file
-├── pyproject.toml              # Python dependencies
-├── .python-version             # Python version specification
-├── 
-├── code/                       # Implementation code
-│   ├── llm_provider_factory.py      # PydanticAI multi-provider LLM system
-│   ├── reranker_enhancement_plan.py # Advanced multi-reranker system  
-│   ├── cross_encoder_reranker.py    # Two-stage retrieval implementation
-│   ├── ground_truth_generator.py    # LLM-based similarity evaluation
-│   ├── google_patents_baseline.py   # Classification-based search baseline
-│   ├── scientific_analysis.py       # Statistical analysis & visualization
-│   ├── run_multimodel_experiments.py # Batch experiment runner
-│   ├── model_performance_analyzer.py # Performance analysis & ranking
-│   ├── comprehensive_evaluation.py   # End-to-end evaluation pipeline
-│   └── download_large_diverse_patents.py # Dataset preparation
+├── README.md                           # This file - start here!
+├── DEVELOPER_ONBOARDING_GUIDE.md      # Complete developer guide
+├── AI_AGENT_GUIDE.md                   # AI agent navigation guide
+├── PROJECT_HANDOFF_DOCUMENT.md         # Complete handoff documentation
+├── PROJECT_ORGANIZATION_SUMMARY.md     # Organization details
+├── pyproject.toml                      # Python dependencies
+├── uv.lock                            # Dependency lock file
 │
-├── data/                       # Datasets and results  
-│   ├── patent_abstracts_100k_diverse.jsonl # 100K diverse patents (255MB)
-│   ├── patent_abstracts_10k_diverse.jsonl  # 10K diverse patents (44MB)
-│   ├── patent_ground_truth_*.jsonl         # LLM-evaluated similarity pairs
-│   ├── metadata/
-│   │   ├── master_index.json              # Complete data inventory
-│   │   └── organization_plan.json         # Data consolidation plan
-│   └── *_embeddings.jsonl                 # Generated embeddings (766MB+ total)
+├── 🐍 code/                            # ALL PYTHON CODE HERE
+│   ├── core/                           # Core system components (4 files)
+│   ├── data_processing/               # Data handling (8 files)
+│   ├── analysis/                       # Analysis tools (7 files)
+│   ├── experiments/                    # Research workflows (7 files)
+│   ├── benchmarks/                    # Performance testing (8 files)
+│   ├── monitoring/                     # System monitoring (7 files)
+│   ├── utilities/                      # Helper tools (20+ files)
+│   └── README.md                       # Code organization guide
 │
-├── production_*_embeddings.jsonl      # Large-scale embedding results (Git LFS)
-├── ground_truth_partial_*.jsonl       # Ongoing ground truth generation
+├── 🗄️ data_v2/                         # CONSOLIDATED DATA HERE
+│   ├── master_patent_embeddings.jsonl  # 875MB - Main dataset
+│   ├── ground_truth_similarities.jsonl # 11.5MB - LLM evaluations
+│   ├── atlas_data/                     # Visualization data
+│   ├── batch_processing/               # OpenAI API batch files
+│   └── README.md                       # Data organization guide
 │
-├── reports/                    # Research reports and analysis
-│   ├── SCIENTIFIC_PATENT_SEARCH_ANALYSIS.md  # 📄 Main scientific paper
-│   ├── PROJECT_SUMMARY.md                    # Complete project overview
-│   ├── MODEL_PERFORMANCE_ANALYSIS.md         # Detailed model comparison
-│   ├── RERANKER_PERFORMANCE_ANALYSIS.md      # Reranker evaluation
-│   ├── MODEL_COMPARISON_SUMMARY.md           # Executive summary
-│   └── CHUNKING_EXPERIMENT_GUIDE.md          # Chunking analysis
+├── 📊 reports/                         # ALL DOCUMENTATION HERE
+│   ├── scientific/                     # Research papers (3 files)
+│   ├── technical/                      # Technical docs (7 files)
+│   ├── analysis/                       # Analysis outputs (4 files)
+│   ├── images/                         # Generated visualizations
+│   └── README.md                       # Report organization guide
 │
-├── visualizations/             # Generated plots and charts
-│   ├── patent_similarity_analysis.png   # 4-panel scientific visualization
-│   ├── correlation_heatmap.png          # Correlation matrix
-│   └── chunking_analysis_visualizations/ # Chunking experiment plots
-│
-└── analysis/                   # Additional analysis files
-    └── [temporary analysis files]
+├── 📈 figures/                         # Generated plots and charts
+├── 📋 analysis/                        # Analysis results and outputs
+├── 🔧 scripts/                         # Utility scripts
+└── 🗃️ archive/                         # Data backups
 ```
+
+---
+
+## 📚 Documentation Guide
+
+### **For New Team Members**
+1. **Start here**: `README.md` - Main project overview
+2. **Complete guide**: `DEVELOPER_ONBOARDING_GUIDE.md` - Everything you need to know
+3. **Handoff docs**: `PROJECT_HANDOFF_DOCUMENT.md` - Complete handoff documentation
+4. **Organization**: `PROJECT_ORGANIZATION_SUMMARY.md` - How everything is organized
+
+### **For AI Coding Agents**
+1. **Navigation guide**: `AI_AGENT_GUIDE.md` - Complete AI agent navigation
+2. **Code organization**: `code/README.md` - Code structure and patterns
+3. **Data access**: `data_v2/README.md` - Data organization and usage
+4. **Reports**: `reports/README.md` - Documentation structure
+
+### **Key Research Papers**
+1. **Main paper**: `reports/scientific/SCIENTIFIC_PATENT_SEARCH_ANALYSIS.md`
+2. **Project summary**: `reports/scientific/PROJECT_SUMMARY.md`
+3. **Model analysis**: `reports/technical/MODEL_PERFORMANCE_ANALYSIS.md`
 
 ---
 
@@ -105,7 +119,6 @@ Create a `.env` file with your API keys (optional):
 OPENAI_API_KEY=your_openai_key_here
 GOOGLE_API_KEY=your_google_key_here
 ANTHROPIC_API_KEY=your_anthropic_key_here
-COHERE_API_KEY=your_cohere_key_here
 ```
 
 ---
